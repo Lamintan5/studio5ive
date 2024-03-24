@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" id="favicon" href="images/5logo_white.png" type="image/x-icon">
+    <title>Studio5ive</title>
+</head>
+<body>
+    <body>
+        <nav>
+            <a href="#" class="logo"></a>
+            <div>
+                <input type="checkbox" id="check" class="nav-check">
+                <ul>
+                    <li><a href="#index" class="active" >Home</a></li>
+                    <li><a href="#about" class="active" >About</a></li>
+                    <li><a href="#services" class="active" >Services</a></li>
+                    <li><a href="#faq" class="active" >FAQ</a></li>
+                    <li><a href="#features" class="active" >Features</a></li>
+                    <li><a href="#contact" class="active" >Contact</a></li>
+                </ul>
+                <div class="check-menu"> 
+                       <label for="check" class="chckbtn" onclick="toggleCheckbox()">
+                        <img src="images/menu.svg" alt="Menu Icon" class="menu">
+                    </label>
+                </div>
+            </div>
+        </nav>   
+        <section class="home-banner" id="index">
+            <div class="">
+                <h1 class="head">
+                    Empowering Your Vision & Crafting </br>
+                    <span class="auto-type"></span>
+                </h1>
+                <p>
+                    Welcome to StudioFive: Where Digital Excellence Meets Creativity! Explore Our 
+                    World of Innovation, Unleashing Cutting-Edge Services in Mobile, Web, Windows, 
+                    macOS App Development, Games, AI Solutions, Architectural Design, and Mesmerizing 
+                    Video Animation Rendering. Elevate Your Vision with StudioFive – Your 
+                    Premier Destination for Comprehensive and Distinctive Digital Solutions!
+                </p>
+                <a href="#services" class="book-btn">Book Now</a>
+            </div>
+        </section>
+
+        <section class="wedo" id="services">
+            <div class="column">
+                <div class="column">
+                    <h1>What We Do</h1>
+                    <p class="reveal">
+                        At StudioFive, we pride ourselves on being a one-stop destination for a diverse range 
+                        of services that seamlessly blend technology, creativity, and innovation. Our expert team 
+                        is dedicated to transforming your ideas into digital masterpieces that leave a lasting impact. 
+                        Here's a glimpse into the array of services we offer:
+                    </p>
+                </div>
+                <div class="service">
+                    <div class="cards reveal">
+                        <div class="card reveal">
+                            <i class="fa fa-code"></i>
+                            <h2>Software Development</h2>
+                            <p>Mobile, Web, Windows, macOS application Development, Cross-Platform Development, Custom Software Solutions, UI/UX Design, Quality Assurance and Testing, Maintenance and Support, Technology Consulting</p>
+                            <a href="#services" class="btn" onclick="showDialog('Software Development')">Book</a>
+                        </div>
+                        <div class="card reveal">
+                            <i class="fa fa-brain"></i>
+                            <h2>Artificial Intelligence</h2>
+                            <p>Machine Learning Solutions, Natural Language Processing, AI Integration, Computer Vision, AI-Powered Automation, Predictive Analytics, Chatbots and Virtual Assistants,Recommendation Systems, Ethical AI Development, AI Consulting</p>
+                            <a href="#services" class="btn" onclick="showDialog('Artificial Intelligence')">Book</a>
+                        </div>
+                        <div class="card reveal">
+                            <i class="fa fa-building"></i>
+                            <h2>Architecture Services</h2>
+                            <p>Architectural Design, 3D Modeling and Rendering, Interior Design, Exterior Design, Architectural Visualization, Sustainable Design, Building Information Modeling, Construction Administration, Code Compliance and Permitting</p>
+                            <a href="#services" class="btn" onclick="showDialog('Architecture Services')">Book</a>
+                        </div>
+                        <div class="card reveal">
+                            <i class="fa fa-film"></i>
+                            <h2>Animation Services</h2>
+                            <p>2D Animation, 3D Animation, Motion Graphics, Character Animation, Explainer Videos, Visual Effects, Product Animation, Architectural Visualization, Storyboarding and Previsualization, Interactive Animation, Advertisement Animation</p>
+                            <a href="#services" class="btn" onclick="showDialog('Animation Services')">Book</a>
+                        </div>
+                        <div class="card reveal">
+                            <i class="fa fa-gamepad"></i>
+                            <h2>Video Games</h2>
+                            <p>Game Design, Concept Development, Prototyping, Art and Asset Creation, Programming and Development, Level Design, Sound Design and Music,Quality Assurance and Testing, Publishing and Distribution</p>
+                            <a href="#services" class="btn" onclick="showDialog('Video Games')">Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="column">
+                <div class="head2">
+                    <h1 class="reveal">Our Amazing Features</h1> 
+                    <h2 class="reveal">Discover the Power of StudioFive: Elevating Digital Innovation with Our Unparalleled Suite of Services</h2>
+                </div>
+                <div class="fcolumn">
+                    <div class="fcard reveal">
+                        <h2>Customized Solutions</h2>
+                        <p>Tailored software development and design services to meet the unique needs of each client</p>                    
+                    </div>
+                    <div class="fcard reveal">
+                        <h2>Cutting-edge Technologies</h2>
+                        <p>Utilization of the latest technologies and tools for mobile, web, desktop, and game development, as well as AI solutions</p>                    
+                    </div>
+                    <div class="fcard reveal">
+                        <h2>Cross-Platform Compatibility</h2>
+                        <p>Expertise in developing applications and games that work seamlessly across multiple platforms such as iOS, Android, Windows, and macOS</p>                    
+                    </div>
+                    <div class="fcard reveal">
+                        <h2>Creative Design Expertise</h2>
+                        <p>Skilled designers and architects capable of creating stunning visualizations for architecture, interior/exterior designs, and animation rendering</p>                    
+                    </div>
+                    <div class="fcard reveal">
+                        <h2>Game Development Expertise</h2>
+                        <p>From concept to deployment, StudioFive offers comprehensive game development services, including game design, coding, graphics, and sound production</p>                    
+                    </div>
+                    <div class="fcard reveal">
+                        <h2>AI Integration</h2>
+                        <p> Incorporating artificial intelligence technologies into applications to enhance functionality, automation, and user experience</p>                    
+                    </div>
+                    <div class="fcard reveal">
+                        <h2>Responsive Web Design</h2>
+                        <p>Creating websites that adapt and perform well across various devices and screen sizes</p>                    
+                    </div>
+                    <div class="fcard reveal">
+                        <h2>Agile Development Methodologies</h2>
+                        <p>Agile project management methodologies to ensure efficient development processes and timely delivery of projects</p>                    
+                    </div>
+                    <div class="fcard reveal">
+                        <h2>Quality Assurance</h2>
+                        <p>Rigorous testing procedures to ensure the reliability, performance, and security of developed software and applications</p>                    
+                    </div>
+                    <div class="fcard reveal">
+                        <h2>Client Collaboration</h2>
+                        <p>Transparent communication and collaboration throughout the project lifecycle to ensure alignment with client goals and expectations</p>                    
+                    </div>
+                
+                </div>
+            </div>  
+        </section>
+
+        <section class="aboutus" id="about">
+            <div class="column">
+                <h1>About Us</h1>
+                <div class="aboutcontent">
+                    <img src="images/build.jpg" alt="" class="building slide-in from-left">
+                    <div class="column">
+                        <p class="slide-in from-right">
+                            StudioFive is a dynamic and forward-thinking digital solutions company dedicated to transforming ideas into reality. With a passionate team of developers, designers, architects, and creative minds, we specialize in delivering cutting-edge software development, game design, AI solutions, architectural visualization, and animation services.
+                        </p>
+                        <p class="slide-in from-right">
+                            At StudioFive, we believe in the power of innovation and collaboration to unlock the full potential of every project. With a focus on quality, creativity, and client satisfaction, we strive to exceed expectations and empower our clients to achieve their goals.
+                        </p>
+                        <p class="slide-in from-right">
+                            Driven by a relentless pursuit of excellence, we stay at the forefront of technology trends and industry best practices, ensuring that our clients receive the most innovative and effective solutions. Whether you're a startup seeking to disrupt the market or an established enterprise looking to enhance your digital presence, StudioFive is here to partner with you on your journey to success.
+                        </p>
+                        <p class="slide-in from-right">
+                            Join us at StudioFive and experience the difference that passion, expertise, and dedication can make in turning your vision into reality.
+                        </p>
+                        <div class="column">
+                            <a href="#services" class="book-btn reveal">Get Started</a>
+                            <div class="iconrow reveal">
+                                <img src="icons/fb.svg" alt="" class="sicon">
+                                <img src="icons/X.svg" alt="" class="sicon">
+                                <img src="icons/IG.svg" alt="" class="sicon">
+                                <img src="icons/link.svg" alt="" class="sicon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="column">
+                <div class="column reveal">
+                    <h1>Frequently Asked Questions</h1> 
+                    <h2>Here are some of Frequently Asked Questions from Registered customer’s</h2>
+                </div>
+                <div class="accd-grid">
+                    <div class="first-acc">
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="first">
+                                <label for="first">What services does StudioFive offer?</label>
+                                <div class="content">
+                                    <p>
+                                        StudioFive offers a wide range of services including mobile application development, web development, desktop application development, game development, AI development, architectural design, interior and exterior design, animation, and rendering services.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="second">
+                                <label for="second"> Does StudioFive offer flexible pricing options to accommodate different budget levels?</label>
+                                <div class="content">
+                                    <p>
+                                        Yes, StudioFive understands that every project is unique, and we offer flexible pricing options to accommodate a range of budget levels. Whether you're a startup with limited resources or a large enterprise looking for comprehensive solutions, we can tailor our pricing to suit your specific needs and requirements. Our goal is to provide high-quality services that deliver value and ROI for our clients, regardless of their budget constraints.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="third">
+                                <label for="third">How can I contact StudioFive for inquiries or to request a quote?</label>
+                                <div class="content">
+                                    <p>
+                                        You can contact StudioFive by filling out the contact form on our website, sending us an email at <a >info@studio5ive.org</a>, or giving us a call at <a >+254706751272</a>. Our team will be happy to assist you with any inquiries or quote requests.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="fourth">
+                                <label for="fourth">How long does it take to complete a project with StudioFive?</label>
+                                <div class="content">
+                                    <p>
+                                        The timeline for completing a project with StudioFive depends on the scope and complexity of the project. We work closely with our clients to establish project timelines and milestones, and strive to deliver high-quality results in a timely manner.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="second-acc">
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="fifth">
+                                <label for="fifth"> Does StudioFive offer ongoing support and maintenance services?</label>
+                                <div class="content">
+                                    <p>
+                                        Yes, StudioFive offers ongoing support and maintenance services to ensure the continued functionality and performance of your software applications, games, or architectural designs. We can tailor a support plan to meet your specific needs and requirements.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="sixth">
+                                <label for="sixth">Can StudioFive help with branding or graphic design?</label>
+                                <div class="content">
+                                    <p>
+                                        While our primary focus is on software development, game development, AI development, and architectural design, we also offer graphic design services as part of our overall design process. Whether you need branding materials, user interface (UI) design, or marketing collateral, our talented team can assist you.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="seventh">
+                                <label for="seventh">Does StudioFive provide consultations or assessments before starting a project?</label>
+                                <div class="content">
+                                    <p>
+                                        Yes, StudioFive offers consultations and assessments to discuss your project requirements, goals, and vision. During these sessions, our team will work closely with you to understand your needs, provide recommendations, and develop a customized plan to bring your ideas to life.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <ul class="accordion reveal">
+                            <li>
+                                <input type="radio" name="accordion" id="eigth">
+                                <label for="eigth">What sets StudioFive apart from other service providers in the industry?</label>
+                                <div class="content">
+                                    <p>
+                                        StudioFive distinguishes itself through its commitment to innovation, quality, and client satisfaction. Our team of experienced professionals brings a wealth of expertise to every project, ensuring that we deliver exceptional results that exceed expectations. Additionally, our collaborative approach, attention to detail, and dedication to staying at the forefront of technology trends set us apart as a trusted partner for all your digital and design needs.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer" id="contact">
+            <div class="row-footer">
+                <div class="clmn-footer">
+                    <div class="row">
+                        <img src="images/5logo_white.png" alt="" class="logo2">
+                            <h3 class="text">STUDIO5IVE</h3>
+                    </div>    
+                    <div class="iconrow">
+                        <img src="icons/fb.svg" alt="" class="sicon">
+                        <img src="icons/X.svg" alt="" class="sicon">
+                        <img src="icons/IG.svg" alt="" class="sicon">
+                        <img src="icons/link.svg" alt="" class="sicon">
+                    </div>
+    
+                </div>  
+                
+                <div class="contactInfo">
+                
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>info@studio5ive.org</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+254706751272</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form action="" id="contactForm">
+                        <h2>Send Message</h2>
+                        <div class="alert">Your message was sent</div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="'required" id="name">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="'required" id="email">
+                            <span>Email Address</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea name="" id="message" cols="30" rows="5" required="'required"></textarea>
+                            <span>Type Your Message...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </form>
+                </div>            
+            </div>
+            <div class="row">
+                <p>© 2024 STUDIO5IVE | All Rights Reserved | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+
+        <div class="cookie">
+            <div class="container">
+                <div class="subcontainer">
+                    <div class="cookies">
+                        <p>🍪 We use cookies to enhance your browsing experience and provide personalized content. 
+                            By continuing to use our website, you consent to our use of cookies. For more information, 
+                            please read our <a href="privacy.html">Privacy Policy</a> </p>
+                        
+                        <button class="cookie-btn">Agree</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dialog" id="dialog">
+            <div class="row">
+                <h1 id="dialogTitle">Book Your StudioFive Service Today!</h1>
+                <i class="fa fa-close close-button"  onclick="hideDialog()"></i>
+            </div>
+        
+            <p>
+                Explore Our Range of Expert Services and Elevate Your Project.
+            </p>
+            <div class="sAlert">Service request sent successfully. Rest Assured, We'll Reach Out Promptly Upon Submission</div>            
+            <form action="form" method="dialog" class="form" id="serviceForm">
+                <div class="inputBox">
+                    <input type="text" name="" required="'required" id="sName">
+                    <span>Full Name</span>
+                </div>
+                <div class="row">
+                    <div class="inputBox">
+                        <input type="text" name="" required="'required" id="sEmail">
+                        <span>Email Address</span>
+                    </div>
+                    <div class="sizedbox"></div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="'required" id="sPhone">
+                        <span>Phone</span>
+                    </div>
+                    
+                </div>
+                <label for="sServices">Select Services:</label><br>
+                <select id="sServices" name="sServices" class="sServices">
+                  
+                </select>
+                <div class="row-btns">
+                
+                    <button class="button" type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="./mail.js"></script>
+    
+    <script>
+        function showDialog(service) {
+          var dialogTitle = document.getElementById('dialogTitle');
+          var select = document.getElementById('sServices');
+
+          dialogTitle.textContent = service;
+          select.innerHTML = '';
+
+        if (service === 'Software Development') {
+            addOption(select, 'Mobile Application Development');
+            addOption(select, 'Web Application Development');
+            addOption(select, 'Windows Software Development');
+            addOption(select, 'macOS Software Development');
+            addOption(select, 'Cross-Platform Development');
+            addOption(select, 'Custom Software Solutions');
+            addOption(select, 'UI/UX Design');
+            addOption(select, 'Quality Assurance and Testing');
+            addOption(select, 'Maintenance and Support');
+            addOption(select, 'Technology Consulting');
+            addOption(select, 'Payment Gateway Intergration');
+        } else if (service === 'Artificial Intelligence') {
+            addOption(select, 'Machine Learning Solutions');
+            addOption(select, 'Natural Language Processing');
+            addOption(select, 'AI Integration');
+            addOption(select, 'Computer Vision');
+            addOption(select, 'AI-Powered Automation');
+            addOption(select, 'Predictive Analytics');
+            addOption(select, 'Chatbots and Virtual Assistants');
+            addOption(select, 'Recommendation Systems');
+            addOption(select, 'Ethical AI Development');
+            addOption(select, 'AI Consulting');
+        } else if (service === 'Architecture Services') {
+            addOption(select, 'Architectural Design');
+            addOption(select, '3D Modeling and Rendering');
+            addOption(select, 'Interior Design');
+            addOption(select, 'Exterior Design');
+            addOption(select, 'Architectural Visualization');
+            addOption(select, 'Sustainable Design');
+            addOption(select, 'Building Information Modeling');
+            addOption(select, 'Construction Administration');
+            addOption(select, 'Code Compliance and Permitting');
+        } else if (service === 'Animation Services') {
+            addOption(select, '2D Animation');
+            addOption(select, '3D Animation');
+            addOption(select, 'Advertisement Animation');
+            addOption(select, 'Motion Graphics');
+            addOption(select, 'Character Animation');
+            addOption(select, 'Explainer Videos');
+            addOption(select, 'Visual Effects');
+            addOption(select, 'Product Animation');
+            addOption(select, 'Architectural Visualization');
+            addOption(select, 'Storyboarding and Previsualization');
+            addOption(select, 'Interactive Animation');
+        } else if (service === 'Video Games'){
+            addOption(select, 'Game Design');
+            addOption(select, 'Game Development');
+            addOption(select, 'Concept Development');
+            addOption(select, 'Prototyping');
+            addOption(select, 'Art and Asset Creation');
+            addOption(select, 'Level Design');
+            addOption(select, 'Sound Design and Music');
+        }
+
+          var dialog = document.getElementById('dialog');
+          dialog.style.display = 'block';
+        }
+
+        function addOption(select, optionText) {
+            var option = document.createElement('option');
+            option.text = optionText;
+            select.add(option);
+        }
+    
+        function hideDialog() {
+          var dialog = document.getElementById('dialog');
+          dialog.style.display = 'none';
+        }
+    </script>
+      
+    <script src="java/main.js">
+        function toggleCheckbox() {
+            var checkbox = document.getElementById('check');
+            checkbox.checked = !checkbox.checked;
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+        var listItems = document.querySelectorAll('nav.sticky ul li a');
+        listItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                document.getElementById('check').checked = false;
+            });
+        });
+    
+    });
+    </script>   
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings : ["Digital Excellence"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            looped: true
+        })
+    </script>
+    </body>
+    
+</body>
+</html>
