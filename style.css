@@ -168,9 +168,14 @@ filter: invert(0%);
     font-size: 30px;
 }
 
-
-.wedo .column p{
+.subtitle{
     width: 50%;
+    color: #a8a8a8;
+}
+
+
+.wedo .cards .card p{
+    width: 90%;
     color: #a8a8a8;
 }
 
@@ -957,6 +962,12 @@ input[type="radio"]:checked + label::before{
     body{
         width: 100%;
     }
+
+    .subtitle{
+        width: 90%;
+    }
+
+    
 
     .from-left{
         grid-column: 2 / 3;
