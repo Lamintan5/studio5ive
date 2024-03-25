@@ -997,13 +997,15 @@ input[type="radio"]:checked + label::before{
         grid-template-columns: repeat(1, 1fr);
     }   
 
+    .card a {
+        color: cyan;
+    }
+
     .chckbtn{
         display: block;
     }
 
     
-
-
     nav{
         align-items: end;
     }
