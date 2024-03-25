@@ -45,8 +45,9 @@ function submitService(e){
     var email = getElementVal('sEmail');
     var phone = getElementVal('sPhone');
     var service = getElementVal('sServices');
+    var time = Date.now();
 
-    saveService(name, email, phone, service);
+    saveService(name, email, phone, service, time);
     document.querySelector('.sAlert').style.display = 'block';
     setTimeout(()=>{
         document.querySelector('.alert').style.display = 'none';  
@@ -55,13 +56,14 @@ function submitService(e){
     document.getElementById("serviceForm").reset();
 }
 
-const saveService = (name, email, phone, service) => {
+const saveService = (name, email, phone, service, time) => {
     var newContacForm = serviceForm.push();
     newContacForm.set({
         name: name,
         email:email,
         phone: phone,
-        service:service
+        service:service,
+        time:time
     })
 };
 
