@@ -179,6 +179,9 @@ filter: invert(0%);
     color: #a8a8a8;
 }
 
+a{
+    color: blue;
+}
 
 .cards{
     display: grid;
