@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" id="favicon" href="images/5logo_white.png" type="image/x-icon">
+    <title>Page not found</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body{
+        background: #000;
+        min-height: 100vh;
+        color: #fff;
+        
+    }
+    .container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    p{
+        color: #afafaf;
+        margin: 10px 50px;
+        text-align: center;
+    }
+    .btn{
+        padding: 10px 50px;
+        border: 1px white solid;
+        font-weight: 100;
+        border-radius: 50px;
+        transition: .5s ease-in-out;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .btn:hover{
+        padding: 10px 50px;
+        background-color: white;
+        color: #000;
+        font-weight: 100;
+        border-radius: 50px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 50px;
+    animation:  fade-down 1s;
+    z-index: 100000;
+    color: #fff;
+}
+    nav .logo {
+    position: relative;
+    width: 40px; 
+    height: 40px; 
+    background-image: url('images/5logo_white.png'); 
+    background-size: cover;
+    text-indent: -9999px;
+    transition: 0.6s;
+}
+
+.error{
+    font-size: 150px;
+    font-weight: bold;
+}
+</style>
+<body>
+    <nav>
+        <a href="https://studio5ive.org" class="logo"></a>
+        
+    </nav>
+    <div class="container">
+        <h1 class="error">404</h1>
+        <h1>We can't find that page</h1>
+        <p>
+            We're fairly sure that page used to be here, but seems to have gone missing. We do apologies on it's behalf. 
+        </p>
+        <a class="btn" href="https://studio5ive.org">
+            Go to Home
+        </a>
+    </div>
+</body>
+</html>
