@@ -154,6 +154,7 @@ filter: invert(0%);
 /* WHAT WE DO */
 .wedo{
     padding: 0px 20px;
+    margin-bottom: 50px;
 }
 
 .wedo .column{
@@ -181,6 +182,41 @@ filter: invert(0%);
 
 a{
     color: blue;
+}
+
+.intro{
+    margin-top: 20px;
+    padding: 2px;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+.intro video{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+/* SERVICES */
+
+.services{
+    padding: 20px 20px;
+    height: 100vh;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.service p {
+    width: 50%;
+    text-align: center;
+    color: #a8a8a8;
+    margin: 0 100px;
 }
 
 .cards{
@@ -970,6 +1006,10 @@ input[type="radio"]:checked + label::before{
         width: 90%;
     }
 
+    .service p {
+        width: 90%;
+    }
+
     
 
     .from-left{
@@ -1014,6 +1054,10 @@ input[type="radio"]:checked + label::before{
     .card a {
         color: cyan;
     }
+
+    .service .cards .card p {
+        padding: 0 10px;
+    } 
 
     .chckbtn{
         display: block;
