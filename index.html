@@ -93,31 +93,31 @@
                     <div class="card reveal">
                         <i class="fa fa-code"></i>
                         <h2>Software Development</h2>
-                        <p>Mobile, Web, Windows, macOS application Development, Cross-Platform Development, Custom Software Solutions, UI/UX Design, Quality Assurance and Testing, Maintenance and Support, Technology Consulting</p>
+                        <p>Mobile, Web, Windows, <br>macOS application Development, <br>Cross-Platform Development, <br>Custom Software Solutions, UI/UX Designl, Payment Gateway Intergration</p>
                         <a href="#services" class="btn" onclick="showDialog('Software Development')">Book</a>
                     </div>
                     <div class="card reveal">
                         <i class="fa fa-brain"></i>
                         <h2>Artificial Intelligence</h2>
-                        <p>Machine Learning Solutions, Natural Language Processing, AI Integration, Computer Vision, AI-Powered Automation, Predictive Analytics, Chatbots and Virtual Assistants,Recommendation Systems, Ethical AI Development, AI Consulting</p>
+                        <p>Machine Learning Solutions, Natural Language Processing, AI Integration, Computer Vision, AI-Powered Automation, Predictive Analytics, Chatbots and Virtual Assistants,Recommendation Systems, Ethical AI Development</p>
                         <a href="#services" class="btn" onclick="showDialog('Artificial Intelligence')">Book</a>
                     </div>
                     <div class="card reveal">
                         <i class="fa fa-building"></i>
                         <h2>Architecture Services</h2>
-                        <p>Architectural Design, 3D Modeling and Rendering, Interior Design, Exterior Design, Architectural Visualization, Sustainable Design, Building Information Modeling, Construction Administration, Code Compliance and Permitting</p>
+                        <p>Architectural Design, <br>3D Modeling and Rendering, <br>Interior Design, Exterior Design, <br>Architectural Visualization</p>
                         <a href="#services" class="btn" onclick="showDialog('Architecture Services')">Book</a>
                     </div>
                     <div class="card reveal">
                         <i class="fa fa-film"></i>
-                        <h2>Animation Services</h2>
-                        <p>2D Animation, 3D Animation, Motion Graphics, Character Animation, Explainer Videos, Visual Effects, Product Animation, Architectural Visualization, Storyboarding and Previsualization, Interactive Animation, Advertisement Animation</p>
+                        <h2>Video & Animation</h2>
+                        <p>2D Animation, 3D Animation, Video Editing, Advertisement Animation, Animated Explainers, Character Animation, Visual Effects, Logo Animation. Music Video, Game Trailer</p>
                         <a href="#services" class="btn" onclick="showDialog('Animation Services')">Book</a>
                     </div>
                     <div class="card reveal">
                         <i class="fa fa-gamepad"></i>
                         <h2>Video Games</h2>
-                        <p>Game Design, Concept Development, Prototyping, Art and Asset Creation, Programming and Development, Level Design, Sound Design and Music,Quality Assurance and Testing, Publishing and Distribution</p>
+                        <p>PC Games,<br> Mobile Games,<br> Concole Games</p>
                         <a href="#services" class="btn" onclick="showDialog('Video Games')">Book</a>
                     </div>
                 </div>
@@ -448,9 +448,6 @@
             addOption(select, 'Cross-Platform Development');
             addOption(select, 'Custom Software Solutions');
             addOption(select, 'UI/UX Design');
-            addOption(select, 'Quality Assurance and Testing');
-            addOption(select, 'Maintenance and Support');
-            addOption(select, 'Technology Consulting');
             addOption(select, 'Payment Gateway Intergration');
         } else if (service === 'Artificial Intelligence') {
             addOption(select, 'Machine Learning Solutions');
@@ -462,39 +459,32 @@
             addOption(select, 'Chatbots and Virtual Assistants');
             addOption(select, 'Recommendation Systems');
             addOption(select, 'Ethical AI Development');
-            addOption(select, 'AI Consulting');
         } else if (service === 'Architecture Services') {
             addOption(select, 'Architectural Design');
             addOption(select, '3D Modeling and Rendering');
             addOption(select, 'Interior Design');
             addOption(select, 'Exterior Design');
             addOption(select, 'Architectural Visualization');
-            addOption(select, 'Sustainable Design');
-            addOption(select, 'Building Information Modeling');
-            addOption(select, 'Construction Administration');
-            addOption(select, 'Code Compliance and Permitting');
+        
         } else if (service === 'Animation Services') {
             addOption(select, '2D Animation');
             addOption(select, '3D Animation');
             addOption(select, 'Advertisement Animation');
-            addOption(select, 'Motion Graphics');
+            addOption(select, 'Video Editing');
             addOption(select, 'Character Animation');
             addOption(select, 'Explainer Videos');
             addOption(select, 'Visual Effects');
             addOption(select, 'Product Animation');
             addOption(select, 'Architectural Visualization');
-            addOption(select, 'Storyboarding and Previsualization');
-            addOption(select, 'Interactive Animation');
+            addOption(select, 'Logo Animation');
+            addOption(select, 'Animated Game Trailer');
+            addOption(select, 'Music Video');
+            
         } else if (service === 'Video Games'){
-            addOption(select, 'Game Design');
-            addOption(select, 'Game Development');
-            addOption(select, 'Concept Development');
-            addOption(select, 'Prototyping');
-            addOption(select, 'Art and Asset Creation');
-            addOption(select, 'Level Design');
-            addOption(select, 'Sound Design and Music');
-        }
-
+            addOption(select, 'PC Games');
+            addOption(select, 'Mobile Games');
+            addOption(select, 'Concole Games');
+        } 
           var dialog = document.getElementById('dialog');
           dialog.style.display = 'block';
         }
