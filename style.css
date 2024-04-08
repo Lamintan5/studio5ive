@@ -724,7 +724,8 @@ input[type="radio"]:checked + label::before{
 
 /* COOKIE */
 .cookie{
-    width: 100%;
+    width: 60%;
+    margin: 10px;
     padding: 30px 0;
     position: fixed;
     bottom: 0;
