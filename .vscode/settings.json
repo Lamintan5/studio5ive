@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "studio5ive"
+    "liveServer.settings.multiRootWorkspaceName": "studio5ive",
+    "liveServer.settings.port": 5503
 }

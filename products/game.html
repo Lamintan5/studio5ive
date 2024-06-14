@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/port.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" id="favicon" href="../images/5logo_white.png" type="image/x-icon">
+    <title>STUDIO5IVE : Games</title>
+
+    <meta name="msapplication-TileImage" content="https://studio5ive.org/images/web-logo.jpg"/>
+
+    <meta property="og:site_name" content="Studio5ive"/>
+    <meta property="og:title" content="Empowering Your Vision & Crafting Digital Excellence"/>
+    <meta property="og:description" content="Get started with our great offers today"/>
+
+    <meta property="og:image" itemprop="image" content="https://studio5ive.org/images/web-logo.jpg"/>
+
+    <meta property="og:type" content="website"/>    
+    <meta property="og:image:type" content="image/jpg">
+
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="300"/>
+    
+    <meta property="og:url" content="https://studio5ive.org"/>
+
+    <script type="text/javascript" src="../js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="../js/three.min.js"></script>
+	<script type="text/javascript" src="../js/game.js"></script>
+
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo"></a>
+        <div>
+            <input type="checkbox" id="check" class="nav-check">
+            <ul>
+                <li><a href="#solutions" class="active" >Products</a></li>
+                <li><a href="#prices" class="active" >Prices</a></li>
+                <li><a href="#faq" class="active" >FAQ</a></li>
+                <li><a href="#tools" class="active" >Tools</a></li>
+                <li><a class="button button--dione" href="#request" onclick="fillInput('')"><span>Resize</span></a></li>
+                <div class="close-nav">
+                    <label for="check" class="chckbtn" onclick="toggleCheckbox()">
+                        <i class="fas fa-times"></i>
+                    </label>
+                
+                </div>
+            </ul>
+            <div class="check-menu"> 
+                   <label for="check" class="chckbtn" onclick="toggleCheckbox()">
+                    <img src="../images/menu.svg" alt="Menu Icon" class="menu">
+                </label>
+            </div>
+            
+        </div>
+    </nav> 
+
+    <section class="home">
+        <div class="game-holder" id="gameHolder">
+			<div class="header">
+				
+				<div class="score" id="score">
+					<div class="score__content" id="level" style="display: none;">
+						<div class="score__value score__value--level" id="levelValue">1</div>
+						<svg class="level-circle" id="levelCircle" viewbox="0 0 200 200">
+							<circle id="levelCircleBgr" r="80" cx="100" cy="100" fill="none" stroke="#d1b790" stroke-width="24px" />
+							<circle id="levelCircleStroke" r="80" cx="100" cy="100" fill="none" #f25346 stroke="#68c3c0" stroke-width="14px" stroke-dasharray="502" />
+						</svg>
+					</div>
+					<div style="display: none;" class="score__content" id="dist">
+					
+						<div class="score__value score__value--dist" id="distValue">000</div>
+					</div>
+					<div class="score__content" id="energy" style="display: none;">
+						<div class="score__value score__value--energy" id="energyValue">
+							<div class="energy-bar" id="energyBar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="world" id="world"></div>
+		</div>
+        
+        <div class="home-items" >
+            <div class="home-arch"
+            >
+                <h1 >
+                    Video Game <br>
+                    Development Service
+                </h1>
+                <u>
+                    <li>&#10003; <strong>High-Quality Graphics</strong> Stunning visuals and animations that enhance the gaming experience.</li>
+                    <li>&#10003; <strong>Custom Game Development</strong> Tailored solutions to meet client specifications and requirements.</li>
+                    <li>&#10003; <strong>High-Quality Graphics</strong> Stunning visuals and animations that enhance the gaming experience.</li>
+                    <li>&#10003; <strong>Post-Launch Support</strong> Providing ongoing maintenance and updates to keep games relevant and engaging.</li>
+                </u>
+                <div >
+                    <a href="#request" class="btn-rq" onclick="fillInput('')">Request Development</a>
+                    <!-- <a href="#services" class="btn-quote">Get Quote</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions" id="solutions">
+        <h1>What Game Development services Do You Need?</h1>
+        <p class="reveal">
+            Enter the realm of limitless possibilities with Studio5ive's game development expertise. Whether it's crafting mobile, PC, or console games, we specialize in creating immersive experiences that captivate players. From concept art to programming, testing, and marketing, we provide end-to-end solutions to bring your game ideas to life. Let's embark on this gaming journey together and unleash the power of creativity
+        </p>
+        
+        <div class="main">
+            <ul class="cbp-ig-grid">
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am looking for experienced PC game development services to bring our vision to life with immersive gameplay and captivating experiences.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon"  src="../icons/products/game/pc.png" alt="">
+                        <h3 class="cbp-ig-title">PC Games</h3>
+                        <span class="cbp-ig-category">Immerse yourself in the world of PC gaming with Studio5ive's captivating titles. From epic adventures to heart-pounding action, our PC games deliver immersive experiences that push the boundaries of gameplay and storytelling.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am seeking professional mobile game development services to create engaging and innovative gaming experiences tailored for mobile platforms.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" style="height: 100px;" src="../icons/products/game/mobile.png" alt="">
+                        <h3 class="cbp-ig-title">Mobile Games</h3>
+                        <span class="cbp-ig-category">Experience gaming on the go with Studio5ive's mobile games. Whether you're commuting, waiting in line, or relaxing at home, our mobile titles offer engaging gameplay and addictive mechanics designed to entertain and delight players of all ages.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am exploring opportunities for console game development to deliver immersive and high-quality gaming experiences on leading gaming platforms');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/game/xbox.png" alt="">
+                        <h3 class="cbp-ig-title">Console Games</h3>
+                        <span class="cbp-ig-category">Elevate your gaming experience with Studio5ive's console games. From blockbuster hits to indie gems, our console titles deliver thrilling gameplay, stunning visuals, and unforgettable moments that keep players coming back for more.</span>
+                    </a>
+                </li>            
+            </ul>
+        </div>
+    </section>
+    <section class="request" id="request">
+        <div class="req-container reveal">
+            <div class="row">
+                <div class="left-container">
+                    <div class="column">
+                        <div>
+                            <div class="dg-logo">
+                                <img src="../images/5logo_white.png" alt="" class="logo2">
+                                <h3 class="text">S T U D I O 5 I V E</h3>
+                            </div> 
+                            <h1>Embark on your journey to success</h1>
+                            <u>
+                                <li>&#10003; Collaborate with our expert team dedicated to bringing your vision to life</li>
+                                <li>&#10003; Connect with talent and businesses worldwide to suit StudioFive's needs</li>
+                                <li>&#10003; Pay per project, not per hour</li>
+                            </u>
+                        </div>
+                        <div>
+                            <a class="box" href="mailto:info@studio5ive.org">
+                                <div class="icon"><i class="fas fa-envelope"></i></div>
+                                <div class="text">
+                                    <h3>Email Us</h3>
+                                    <p>info@studio5ive.org</p>
+                                </div>
+                            </a>
+                            <a class="box phone" href="tel:+254706751272">
+                                <div class="icon"><i class="fas fa-phone"></i></div>
+                                <div class="text">
+                                    <h3>Call Us</h3>
+                                    <p class="contact-phone">+16592702766</p>
+                                </div>
+                            </a>   
+                            <a class="box whatsapp" href="https://wa.me/+16592702766"> 
+                                <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                                <div class="text">
+                                    <h3>Whats App</h3>
+                                    <p class="contact-phone">+16592702766</p>
+                                </div>
+                            </a>  
+                            <div class="box">
+                                <div class="icon"><i class="fas fa-comment"></i></div>
+                                <h3>Live Chat</h3>
+                            </div>  
+                        </div>
+                    </div>                    
+                </div>
+                <div class="right-container">
+                    <h1>We are excited to discuss your Video Games needs!</h1>
+                    <div class="details">
+                        <form action="" id="serviceForm">
+                            <div class="sAlert">Your message was sent</div>
+                            <div class="row">
+                                <div class="inputBox">
+                                    <input type="text" name="" required="'required" id="sName">
+                                    <span>Full Name</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" name=""  id="sCompany">
+                                    <span>Company</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="inputBox">
+                                    <input type="text" name="" required="'required" id="sPhone">
+                                    <span>Phone</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" name="" required="'required" id="sEmail">
+                                    <span>Email Address</span>
+                                </div>
+                            </div>
+                            <div class="inputBox">
+                                <textarea name="" id="sMessage" cols="30" rows="5" required="'required"></textarea>
+                                <span>How can we help you?</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                        </form>
+                    </div> 
+                    <div class="dg-end">
+                        <p>By proceding , you agree to the Studio5ive <a href="../payment.html">Payment Policy</a> and to occasionally receive emails from us. Please read our <a href="../privacy.html">Privacy Policy</a> to learn how we use your personal data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <section class="prices" id="prices">
+        <div class="column">
+            <h1 class="reveal">Average Cost of Different Video Game Development Service</h1>
+            <p class="reveal">
+                At Studio5ive, we understand that every game project is unique, and so are its budgetary considerations. Whether you're developing a PC game, a mobile game, or a console game, our pricing is tailored to fit your specific needs and requirements. With transparent pricing and flexible packages, we ensure that you receive high-quality game development services that meet your expectations without breaking the bank. Contact us today to discuss your project and receive a personalized quote.
+            </p>
+            <ul class="accord reveal">
+                <li>
+                    <input type="radio" name="accord" id="firstp" checked>
+                    <label for="firstp">PC Games</label>
+                    <div class="content">
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Basic Package</h3>
+                                <h4>From</h4>
+                                <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">10000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Includes essential game development services such as concept ideation, basic game design, and simple gameplay mechanics.</li>
+                                    <li>&#10003; Suitable for small-scale projects or indie developers with limited budgets and straightforward game concepts.</li>
+                                    <li>&#10003; Minimal customization and limited platform support.</li>
+                                 </ul>     
+                                                       
+                            </div>
+                        </div>  
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Intermediate Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">50000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Offers a more comprehensive set of game development services, including detailed game design, level design, character development, and intermediate gameplay mechanics.</li>
+                                    <li>&#10003; Suitable for mid-sized projects or indie studios looking to create more polished and engaging games.</li>
+                                    <li>&#10003; Increased customization options and support for multiple platforms such as PC, mobile, and console.</li>
+                              
+                                 </ul>     
+                                                       
+                            </div>
+                        </div> 
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Advanced Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">150000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Provides top-tier game development services with advanced features, high-quality graphics, complex gameplay mechanics, and immersive storytelling.</li>
+                                    <li>&#10003; Suitable for large-scale projects or established game studios aiming to create AAA-quality titles.</li>
+                                    <li>&#10003; Extensive customization options, support for multiple platforms, including PC, mobile, console, and virtual reality (VR), and access to cutting-edge technologies and tools.</li>
+                                 </ul>     
+                                                       
+                            </div>
+                        </div> 
+                       
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <input type="radio" name="accord" id="secondp">
+                    <label for="secondp">Mobile Games</label>
+                    <div class="content">
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Basic Package</h3>
+                                <h4>From</h4>
+                                <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">5000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Offers essential mobile game development services, including simple game mechanics, basic graphics, and limited features.</li>
+                                    <li>&#10003; Suitable for small-scale projects or indie developers with straightforward game concepts and limited budgets.</li>
+                                    <li>&#10003; Basic customization options and support for a single platform (iOS or Android).</li>
+                                 </ul>     
+                                                       
+                            </div>
+                        </div>  
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Intermediate Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">25000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Provides a more comprehensive set of mobile game development services, including polished game design, engaging gameplay mechanics, and improved graphics.</li>
+                                    <li>&#10003; Suitable for mid-sized projects or indie studios looking to create more immersive and visually appealing mobile games.</li>
+                                    <li>&#10003; Increased customization options and support for both iOS and Android platforms.</li>
+                              
+                                 </ul>     
+                                                       
+                            </div>
+                        </div> 
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Advanced Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">50000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Delivers top-tier mobile game development services with advanced features, high-quality graphics, complex gameplay mechanics, and immersive storytelling.</li>
+                                    <li>&#10003; Suitable for large-scale projects or established game studios aiming to create AAA-quality mobile titles.</li>
+                                    <li>&#10003; Extensive customization options, support for multiple platforms (iOS, Android, and possibly others like HTML5), integration of monetization strategies (such as ads, in-app purchases), and access to cutting-edge technologies and tools.</li>
+                                 </ul>     
+                                                       
+                            </div>
+                        </div> 
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <input type="radio" name="accord" id="thirdp">
+                    <label for="thirdp">Console Development</label>
+                    <div class="content">
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Basic Package</h3>
+                                <h4>From</h4>
+                                <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">12000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Includes fundamental console game development services, such as basic game mechanics, simple graphics, and limited features.</li>
+                                    <li>&#10003; Suitable for small-scale projects or indie developers with straightforward game concepts and limited budgets.</li>
+                                    <li>&#10003; Basic customization options and support for a single console platform (e.g., PlayStation, Xbox, Nintendo Switch).</li>
+                                 </ul>     
+                                                       
+                            </div>
+                        </div>  
+                       
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Intermediate Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">50000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Provides a more comprehensive set of console game development services, including polished game design, engaging gameplay mechanics, and improved graphics.</li>
+                                    <li>&#10003; Suitable for mid-sized projects or indie studios looking to create more immersive and visually appealing console games.</li>
+                                    <li>&#10003; Increased customization options and support for multiple console platforms, enabling developers to reach a broader audience.</li>
+                                 </ul>     
+                                                       
+                            </div>
+                        </div> 
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Advanced Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">100000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Suitable for large-scale projects or established game studios aiming to create AAA-quality console titles.</li>
+                                    <li>&#10003; Extensive customization options, support for multiple console platforms (PlayStation, Xbox, Nintendo Switch), integration of online multiplayer features, and access to cutting-edge technologies and tools.</li>
+                                    <li>&#10003; Delivers top-tier console game development services with advanced features, high-quality graphics, complex gameplay mechanics, and immersive storytelling.</li>
+                              
+                                 </ul>     
+                                                       
+                            </div>
+                        </div> 
+                    </div>
+                </li>
+            </ul>
+            <div id="location" class="location">Prices converted to USD</div>
+        </div>
+    </section>
+    <section class="faq" id="faq">
+        <div class="column">
+            <div class="column reveal">
+                <h1>Frequently Asked Questions</h1> 
+                <h2>Here are some of Frequently Asked Questions from Registered customer’s</h2>
+            </div>
+            <div class="accd-grid">
+                <div class="first-acc"> 
+                    
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="first">
+                            <label for="first">What is video game development?</label>
+                            <div class="content">
+                                <p>
+                                    Video game development is the process of creating video games for various platforms, including consoles, PC, and mobile devices. It involves designing game mechanics, developing code, creating artwork and animations, and testing the game for bugs and glitches. 
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="second">
+                            <label for="second">What services does Studio5ive offer for video game development?</label>
+                            <div class="content">
+                                <p>
+                                    Studio5ive offers a comprehensive range of video game development services, including concept art, game design, programming, art and animation, quality assurance, and marketing assistance.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="third">
+                            <label for="third">How much does video game development cost?</label>
+                            <div class="content">
+                                <p>
+                                    The cost of video game development varies depending on factors such as the complexity of the game, the number of platforms it will be released on, and the level of customization required. Studio5ive provides customized quotes based on each client's specific needs and budget.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="fourth">
+                            <label for="fourth">How long does it take to develop a video game?</label>
+                            <div class="content">
+                                <p>
+                                    The timeline for video game development depends on various factors, including the scope of the project, the size of the development team, and the platform(s) being targeted. Studio5ive works closely with clients to establish realistic timelines and ensure timely delivery.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="second-acc">
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="fifth">
+                            <label for="fifth">Do I need to have a game idea or concept before approaching Studio5ive for development services?</label>
+                            <div class="content">
+                                <p>
+                                    While having a game idea or concept can be helpful, Studio5ive offers assistance in every stage of the game development process, from initial concept ideation to final release. Our experienced team can help you refine your ideas and bring them to life.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="sixth">
+                            <label for="sixth">Can Studio5ive help with game marketing and distribution?</label>
+                            <div class="content">
+                                <p>
+                                    Yes, Studio5ive offers additional services such as game marketing and distribution assistance to help clients maximize the reach and impact of their games. We provide guidance on leveraging social media, app stores, and other channels to promote games effectively.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="seventh">
+                            <label for="seventh">What platforms can Studio5ive develop games for?</label>
+                            <div class="content">
+                                <p>
+                                    Studio5ive has expertise in developing games for a variety of platforms, including consoles (PlayStation, Xbox, Nintendo Switch), PC, and mobile devices (iOS, Android). We work closely with clients to determine the best platforms for their target audience and project goals.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="eigth">
+                            <label for="eigth">Does Studio5ive work with indie developers and large studios alike?</label>
+                            <div class="content">
+                                <p>
+                                    Yes, Studio5ive caters to clients of all sizes, from indie developers working on their first game to established studios with multiple projects. We offer flexible solutions tailored to each client's needs and budget, ensuring that every project receives the attention and care it deserves.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tools" id="tools">
+        <div class="column">
+            <h1>Technologies and Tools <br>We Work With</h1>
+            <div class="row">
+                <div class="column">
+                    <h2>Programms</h2>
+                    <div class="grid">
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/2503px-Blender_logo_no_text.svg.png" alt=""></div>
+                        <div class="tool"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwqMgQNKkw52YD0SVF8cFUo5Hkpr7Z637b13d46rM4Tg&s"alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Godot_icon.svg/1200px-Godot_icon.svg.png" alt=""></div>
+                        <div class="tool"><img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f74cc6da-e2c7-495b-82f3-42645021d3ab-profile_image-300x300.png" alt=""></div>
+                        <div class="tool"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNM37JiD24k4ZAxeXLvjI6T2GbNRaJjlXbH_-p73J-9g&s" alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Construct_3_Logo.svg/1701px-Construct_3_Logo.svg.png" alt=""></div>
+                        <div class="tool"><img src="https://cdn.iconscout.com/icon/free/png-256/free-unity-226057.png?f=webp" alt=""></div>
+                        <div class="tool"><img src="https://3.imimg.com/data3/MX/JB/MY-13909318/cocos-2d-mobile-applications.png" alt=""></div>
+                        <div class="tool"><img src="https://coronalabs.com/wordpress/wp-content/uploads/2017/06/corona_logo_circle_RGB.png" alt=""></div>
+                        <div class="tool"><img src="https://avatars.githubusercontent.com/u/767125?s=280&v=4" alt=""></div>
+                     
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <div class="footer" id="contact">
+        <div class="row-footer">
+            <div class="clmn-footer">
+                <div class="row">
+                    <img src="../images/5logo_white.png" alt="" class="logo2">
+                        <h3 class="text">STUDIO5IVE</h3>
+                </div>    
+                <div class="iconrow">
+                    <button class="button button--skoll" style="background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);"><span style="mix-blend-mode:normal"><span><img src="../icons/IG.svg" alt="" class="skoll-icon"></span></span></button>
+                    <button class="button button--skoll" style="background: #1877F2;"><span style="mix-blend-mode:normal"><span><img src="../icons/fb.svg" alt="" class="skoll-icon"></span></span></button>
+                    <button class="button button--skoll"><span><span><img src="../icons/X.svg" alt="" class="skoll-icon"></span></span></button>
+                    <button class="button button--skoll" style="background-color: #0762C8;"><span style="mix-blend-mode:normal"><span><img src="../icons/link.svg" alt="" class="skoll-icon"></span></span></button>
+                </div>
+
+            </div>  
+            
+            <div class="contactInfo">
+            
+                <a class="box" href="mailto:info@studio5ive.org">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>info@studio5ive.org</p>
+                    </div>
+                </a>
+                <a class="box" href="tel:+254706751272">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p class="contact-phone">+16592702766</p>
+                    </div>
+                </a>
+            </div>
+            <div class="footer__products">                
+                <span class="footer__title">Software</span>
+                <ul class="dropdown__list">
+                    <li><a href="software.html#solutions" class="footer__link">Mobile App Development</a></li>
+                    <li><a href="software.html#solutions" class="footer__link">Website Development</a></li>
+                    <li><a href="software.html#solutions" class="footer__link">Desktop App Development</a></li>
+                    <li><a href="software.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+
+                <span class="footer__title">AI</span>
+                <ul class="dropdown__list">
+                    <li><a href="ai.html#solutions" class="footer__link">Chatbots</a></li>
+                    <li><a href="ai.html#solutions" class="footer__link">Speech Recognition</a></li>
+                    <li><a href="ai.html#solutions" class="footer__link">Computer Vision</a></li>
+                    <li><a href="ai.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+            </div>
+            <div class="footer__products">                
+                <span class="footer__title">Architecture</span>
+                <ul class="dropdown__list">
+                    <li><a href="architecture.html#solutions" class="footer__link">Architectural Design</a></li>
+                    <li><a href="architecture.html#solutions" class="footer__link">3D Modeling and Rendering</a></li>
+                    <li><a href="architecture.html#solutions" class="footer__link">Interior Design</a></li>
+                    <li><a href="architecture.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+
+                <span class="footer__title">Animation</span>
+                <ul class="dropdown__list">
+                    <li><a href="animation.html#solutions" class="footer__link">2D Animation</a></li>
+                     <li><a href="animation.html#solutions" class="footer__link">3D Animation</a></li>
+                    <li><a href="animation.html#solutions" class="footer__link">Music Video</a></li>
+                    <li><a href="animation.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+            </div>
+                    
+        </div>
+        <div class="row">
+            <p>© 2024 STUDIO5IVE | All Rights Reserved | <a href="../privacy.html">Privacy Policy</a> | <a href="../payment.html">Payment Policy</a></p>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="../js/upload.js"></script>
+<script src="../js/location.js"></script>
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/661007f2a0c6737bd128ae88/1hqn9u3nl';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+</html>

@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/port.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" id="favicon" href="../images/5logo_white.png" type="image/x-icon">
+    <title>STUDIO5IVE : AI</title>
+
+    <meta name="msapplication-TileImage" content="https://studio5ive.org/images/web-logo.jpg"/>
+
+    <meta property="og:site_name" content="Studio5ive"/>
+    <meta property="og:title" content="Empowering Your Vision & Crafting Digital Excellence"/>
+    <meta property="og:description" content="Get started with our great offers today"/>
+
+    <meta property="og:image" itemprop="image" content="https://studio5ive.org/images/web-logo.jpg"/>
+
+    <meta property="og:type" content="website"/>    
+    <meta property="og:image:type" content="image/jpg">
+
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="300"/>
+    
+    <meta property="og:url" content="https://studio5ive.org"/>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo"></a>
+        <div>
+            <input type="checkbox" id="check" class="nav-check">
+            <ul>
+                <li><a href="#solutions" class="active" >Products</a></li>
+                <li><a href="#prices" class="active" >Prices</a></li>
+                <li><a href="#faq" class="active" >FAQ</a></li>
+                <li><a href="#tools" class="active" >Tools</a></li>
+                <li><a class="button button--dione" href="#request" onclick="fillInput('')"><span>Resize</span></a></li>
+                <div class="close-nav">
+                    <label for="check" class="chckbtn" onclick="toggleCheckbox()">
+                        <i class="fas fa-times"></i>
+                    </label>
+                
+                </div>
+            </ul>
+            <div class="check-menu"> 
+                   <label for="check" class="chckbtn" onclick="toggleCheckbox()">
+                    <img src="../images/menu.svg" alt="Menu Icon" class="menu">
+                </label>
+            </div>
+            
+        </div>
+    </nav> 
+
+    <section class="home" >
+        <div class="home-items">
+            <div class="ai-banner-image"></div>
+            <div class="home-arch" >
+                <div class="row" style="justify-content: space-between;">
+                    <div class="ai-content" >
+                        <h1>
+                            Artificial intelligence <br>
+                            Service
+                        </h1>
+                        <u>
+                            <li>&#10003; <strong>AI Solutions Tailored to Your Needs</strong> Customized AI applications for diverse industries.</li>
+                            <li>&#10003; <strong>Expert Team</strong> Highly skilled AI specialists and data scientists.</li>
+                            <li>&#10003; <strong>Innovative Technologies</strong> Utilizing advanced machine learning and deep learning techniques.</li>
+                            <li>&#10003; <strong>Seamless Integration</strong> AI solutions that integrate smoothly with your existing systems.</li>
+                        </u>
+                        <div >
+                            <a href="#request" class="btn-rq" onclick="fillInput('')">Request Development</a>
+                            <!-- <a href="#services" class="btn-quote">Get Quote</a> -->
+                        </div>
+                    </div>
+                    <img class="chatbot-img" src="../images/chatbot.svg" alt="" style="width: 500px; height: 500px;">
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions" id="solutions">
+        <h1>What AI services Do You Need?</h1>
+            <P class="reveal">
+                Explore the frontier of artificial intelligence with Studio5ive. Whether it's chatbots, speech recognition, computer vision, predictive analytics, or industry-specific virtual assistants, we provide tailored AI solutions to elevate your business. Let's harness the power of AI together and unlock new possibilities for your organization.
+            </P>
+        
+
+        <div class="main">
+            <ul class="cbp-ig-grid">
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am seeking professional assistance for chatbot development to enhance our customer engagement strategy.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" style="height: 120px;" src="../icons/products/ai/chatbot.png" alt="">
+                        <h3 class="cbp-ig-title">Chatbots</h3>
+                        <span class="cbp-ig-category"> Revolutionize customer interactions with AI-powered chatbots that provide instant support and assistance, enhancing user experience and driving engagement.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am interested in exploring speech recognition solutions to enhance user interaction and accessibility in our project.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/ai/speech-recognition.png" alt="">
+                        <h3 class="cbp-ig-title">Speech Recognition</h3>
+                        <span class="cbp-ig-category">  Harness the power of speech recognition technology to convert spoken words into text, enabling hands-free operation, voice commands, and transcription of audio content.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am seeking expertise in computer vision to integrate advanced visual recognition capabilities into our project.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/ai/vision.png" alt="">
+                        <h3 class="cbp-ig-title">Computer Vision</h3>
+                        <span class="cbp-ig-category"> Unlock the potential of computer vision to analyze and interpret visual data, enabling applications such as object detection, image classification, and facial recognition.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I\'m interested in harnessing generative AI capabilities to drive innovation and creativity within our project.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/ai/va.png" alt="">
+                        <h3 class="cbp-ig-title">Generative AI</h3>
+                        <span class="cbp-ig-category"> Explore the creativity of generative AI, which can generate new content, images, or designs based on patterns and examples, fostering innovation and inspiration.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am exploring the implementation of a predictive and analytics engine to leverage data-driven insights for informed decision-making within our project.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/ai/graph.png" alt="">
+                        <h3 class="cbp-ig-title">Predictive & Analytics Engine</h3>
+                        <span class="cbp-ig-category">Leverage predictive analytics engines to forecast trends, identify patterns, and make data-driven decisions, empowering businesses to anticipate opportunities and risks.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am seeking to implement an advanced image analysis system to extract valuable insights and enhance decision-making processes within our project.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" style="height: 120px;" src="../icons/products/ai/scan.png" alt="">
+                        <h3 class="cbp-ig-title">Image Analysis System</h3>
+                        <span class="cbp-ig-category"> Analyze and extract valuable insights from images using advanced image analysis systems, which can identify objects, detect anomalies, and provide context-rich information.</span>
+                    </a>
+                </li>
+                
+
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am looking to integrate a conversational AI solution to facilitate natural language interactions and enhance user engagement within our project.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/ai/conversation.png" alt="">
+                        <h3 class="cbp-ig-title">Conversational AI</h3>
+                        <span class="cbp-ig-category">Enhance communication and engagement with conversational AI solutions, which enable natural language understanding, context awareness, and personalized interactions across various channels.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am inquiring about implementing comprehensive text-to-speech and speech-to-text functionalities to enrich the interactive experience within our project.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/ai/speech.png" alt="">
+                        <h3 class="cbp-ig-title">Text-to-speech and Speech-to-text</h3>
+                        <span class="cbp-ig-category">Transform text into lifelike speech and vice versa with advanced text-to-speech and speech-to-text capabilities, facilitating natural language interactions and accessibility.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am interested in developing industry-specific virtual assistants to streamline workflows and improve efficiency within our sector.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/ai/va2.png" alt="">
+                        <h3 class="cbp-ig-title">Industry-specific Virtual Assistants</h3>
+                        <span class="cbp-ig-category">Access tailored virtual assistants designed for specific industries, providing specialized support, insights, and automation to streamline operations and deliver exceptional value.</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <section class="request" id="request">
+        <div class="req-container reveal">
+            <div class="row">
+                <div class="left-container">
+                    <div class="column">
+                        <div>
+                            <div class="dg-logo">
+                                <img src="../images/5logo_white.png" alt="" class="logo2">
+                                <h3 class="text">S T U D I O 5 I V E</h3>
+                            </div> 
+                            <h1>Embark on your journey to success</h1>
+                            <u>
+                                <li>&#10003; Collaborate with our expert team dedicated to bringing your vision to life</li>
+                                <li>&#10003; Connect with talent and businesses worldwide to suit StudioFive's needs</li>
+                                <li>&#10003; Pay per project, not per hour</li>
+                            </u>
+                        </div>
+                        <div>
+                            <a class="box" href="mailto:info@studio5ive.org">
+                                <div class="icon"><i class="fas fa-envelope"></i></div>
+                                <div class="text">
+                                    <h3>Email Us</h3>
+                                    <p>info@studio5ive.org</p>
+                                </div>
+                            </a>
+                            <a class="box phone" href="tel:+254706751272">
+                                <div class="icon"><i class="fas fa-phone"></i></div>
+                                <div class="text">
+                                    <h3>Call Us</h3>
+                                    <p class="contact-phone">+16592702766</p>
+                                </div>
+                            </a>   
+                            <a class="box whatsapp" href="https://wa.me/+16592702766"> 
+                                <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                                <div class="text">
+                                    <h3>Whats App</h3>
+                                    <p class="contact-phone">+16592702766</p>
+                                </div>
+                            </a>  
+                            <div class="box">
+                                <div class="icon"><i class="fas fa-comment"></i></div>
+                                <h3>Live Chat</h3>
+                            </div>  
+                        </div>
+                    </div>                    
+                </div>
+                <div class="right-container">
+                    <h1>We are excited to discuss your AI Solutions needs!</h1>
+                    <div class="details">
+                        <form action="" id="serviceForm">
+                            <div class="sAlert">Your message was sent</div>
+                            <div class="row">
+                                <div class="inputBox">
+                                    <input type="text" name="" required="'required" id="sName">
+                                    <span>Full Name</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" name="" id="sCompany">
+                                    <span>Company</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="inputBox">
+                                    <input type="text" name="" required="'required" id="sPhone">
+                                    <span>Phone</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" name="" required="'required" id="sEmail">
+                                    <span>Email Address</span>
+                                </div>
+                            </div>
+                            <div class="inputBox">
+                                <textarea name="" id="sMessage" cols="30" rows="5" required="'required"></textarea>
+                                <span>How can we help you?</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                        </form>
+                    </div> 
+                    <div class="dg-end">
+                        <p>By proceding , you agree to the Studio5ive <a href="../payment.html">Payment Policy</a> and to occasionally receive emails from us. Please read our <a href="../privacy.html">Privacy Policy</a> to learn how we use your personal data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section class="prices" id="prices">
+        <div class="column">
+            <h1 class="reveal">Average Cost of Artificial Intelligence Solutions</h1>
+            <p class="reveal">
+                Discover the Average Cost of Artificial Intelligence Solutions: Unlocking the power of AI doesn't have to break the bank. Our AI solutions are tailored to fit your budget while delivering exceptional results. Explore our affordable options today and revolutionize your business with cutting-edge technology
+            </p>
+            <ul class="accord reveal">
+                <li>
+                    <input type="radio" name="accord" id="firstp" checked>
+                    <label for="firstp">Virtual Assistants</label>
+                    <div class="content">
+                          
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Basic Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">10000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('I am seeking professional assistance for Virtual Assistants development to enhance our customer engagement strategy.');">Request</a>
+                                <ul>
+                                    <li>&#10003; Provides standard virtual assistant functionalities, such as basic customer support and query handling.</li>
+                                    <li>&#10003; Limited customization options for dialogue flows and responses.</li>
+                                    <li>&#10003; Basic integration capabilities with payment gateways for transaction processing.</li>
+                                    <li>&#10003; Suitable for small businesses or startups with low to moderate customer inquiries and transaction volumes.</li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div> 
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Advanced Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">15000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('I am seeking professional assistance for Virtual Assistants development to enhance our customer engagement strategy.');">Request</a>
+                                <ul>
+                                    <li>&#10003; Offers advanced virtual assistant features, including natural language understanding (NLU) and sentiment analysis.</li>
+                                    <li>&#10003; Customizable dialogue flows and responses tailored to specific business needs and customer preferences.</li>
+                                    <li>&#10003; Seamless integration with multiple payment gateways, enabling secure and efficient transaction processing.</li>
+                                    <li>&#10003; Enhanced analytics and reporting capabilities to track user interactions and transaction outcomes.</li>
+                                    <li>&#10003; Suitable for growing businesses with higher customer inquiry and transaction volumes, requiring more sophisticated virtual assistant functionalities.</li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div> 
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Premium Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">20000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('I am seeking professional assistance for Virtual Assistants development to enhance our customer engagement strategy.');">Request</a>
+                                <ul>
+                                    <li>&#10003; Comprehensive suite of virtual assistant AI capabilities, including advanced NLU, sentiment analysis, and personalized recommendations.</li>
+                                    <li>&#10003; Advanced analytics and machine learning-driven insights for optimizing customer interactions and driving revenue growth.</li>
+                                    <li>&#10003; Dedicated account management and priority support services, with proactive monitoring and maintenance of virtual assistant performance.</li>
+                                    <li>&#10003; Suitable for large enterprises or high-growth businesses with complex customer service and transaction processing requirements, demanding the highest levels of virtual assistant AI sophistication and performance.</li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div> 
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <input type="radio" name="accord" id="secondp">
+                    <label for="secondp">Speech and Language Processing</label>
+                    <div class="content">
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Basic Package</h3>
+                                <h4>From</h4>
+                                <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">10000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Offers basic speech recognition and transcription capabilities.</li>
+                                    <li>&#10003; Limited support for multiple languages and accents.</li>
+                                    <li>&#10003; Basic text-to-speech and speech-to-text functionalities with standard voice synthesis and recognition models.</li>
+                                    <li>&#10003; Suitable for small businesses or startups with basic speech processing needs and low to moderate usage.</li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div>  
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Advanced Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">12000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Enhanced speech recognition accuracy and transcription capabilities, with support for a wide range of languages and accents.</li>
+                                    <li>&#10003; Advanced text-to-speech and speech-to-text functionalities, including natural-sounding voice synthesis and improved recognition accuracy through machine learning algorithms.</li>
+                                    <li>&#10003; Integration with voice-enabled applications and devices, allowing seamless interaction with users through spoken language.</li>
+                                    <li>&#10003; Customization options for voice commands, prompts, and responses to tailor the user experience.</li>
+                                    <li>&#10003; Suitable for growing businesses with higher speech processing demands and the need for more accurate and customizable language processing capabilities.</li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div> 
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Premium Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">15000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; State-of-the-art speech and language processing capabilities, leveraging cutting-edge AI models and algorithms.</li>
+                                    <li>&#10003; Industry-leading speech recognition accuracy and transcription speed, with support for specialized domains and technical vocabularies.</li>
+                                    <li>&#10003; Advanced text-to-speech and speech-to-text functionalities with lifelike voice synthesis and real-time translation capabilities.</li>
+                                    <li>&#10003; Seamless integration with enterprise systems and applications, enabling voice-driven automation and intelligent conversational interfaces.</li>
+                                    <li>&#10003; Advanced analytics and reporting features for monitoring performance metrics and optimizing speech processing workflows.</li>
+                                    
+                                 </ul>     
+                                                      
+                            </div>
+                        </div> 
+                        
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <input type="radio" name="accord" id="thirdp">
+                    <label for="thirdp">Visual Perception</label>
+                    <div class="content">
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Basic Package</h3>
+                                <h4>From</h4>
+                                <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">15000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Provides standard visual perception capabilities, such as basic image recognition and object detection.</li>
+                                    <li>&#10003; Limited support for diverse image types and complex visual scenarios.</li>
+                                    <li>&#10003; Basic image analysis features with standard pre-trained models.</li>
+                                    <li>&#10003; Suitable for small businesses or startups with basic image processing needs and low to moderate usage.</li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div>  
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Advanced Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">20000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Enhanced visual perception accuracy and detection capabilities, with support for a wide range of image types, resolutions, and environmental conditions.</li>
+                                    <li>&#10003; Advanced image analysis features, including scene understanding, image segmentation, and context-aware object recognition.
+                                    </li>
+                                    <li>&#10003; Integration with industry-specific image datasets and domain-specific models for specialized visual perception tasks.</li>
+                                    <li>&#10003; Customization options for fine-tuning models and optimizing performance for specific use cases.</li>
+                                    <li>&#10003; Suitable for growing businesses with higher image processing demands and the need for more accurate and customizable visual perception capabilities.</li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div> 
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Premium Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">25000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Industry-leading accuracy and speed in image recognition, object detection, and scene understanding tasks.</li>
+                                    <li>&#10003; Advanced image analysis features with real-time processing and multi-modal data fusion capabilities.</li>
+                                    <li>&#10003; Seamless integration with enterprise systems and applications, enabling intelligent automation and decision-making based on visual data.</li>
+                                    <li>&#10003; Advanced analytics and reporting features for monitoring performance metrics and optimizing visual perception workflows.</li>
+                                    <li>&#10003; Dedicated support and consulting services, with proactive assistance in deploying and optimizing visual perception AI solutions for maximum impact.</li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div> 
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <input type="radio" name="accord" id="fourthp">
+                    <label for="fourthp">Advanced AI</label>
+                    <div class="content">
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Basic Package</h3>
+                                <h4>From</h4>
+                                <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">20000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Provides standard AI capabilities, such as basic machine learning algorithms and predictive analytics.</li>
+                                    <li>&#10003; Limited support for complex data analysis and model training.</li>
+                                    <li>&#10003; Basic integration with business systems and data sources.</li>
+                                    <li>&#10003; Suitable for small businesses or startups with basic AI needs and low to moderate usage.</li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div>  
+                    
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Advanced Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">25000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Enhanced AI capabilities, including advanced machine learning algorithms and predictive modeling techniques.</li>
+                                    <li>&#10003; Includes features such as real-time data synchronization, complex backend systems, and third-party API integrations.</li>
+                                    <li>&#10003; Support for large-scale data analysis, model training, and optimization.</li>
+                                    <li>&#10003; Integration with external data sources and APIs for accessing additional datasets and services.</li>
+                                    <li>&#10003; Customization options for fine-tuning models and algorithms to specific use cases.</li>
+                                    <li>&#10003; Suitable for growing businesses with higher data processing demands and the need for more sophisticated AI capabilities.</li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div> 
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Premium Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">40000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Industry-leading accuracy and performance in machine learning, predictive analytics, and AI-driven decision-making.</li>
+                                    <li>&#10003; Seamless integration with enterprise systems and applications, enabling intelligent automation and data-driven insights.</li>
+                                    <li>&#10003; Advanced analytics and reporting features for monitoring AI performance and optimizing workflows.</li>
+                                    <li>&#10003; Dedicated support and consulting services, with proactive assistance in deploying and optimizing AI solutions for maximum impact.</li>
+                                    <li>&#10003; Suitable for large enterprises or organizations with complex data analysis requirements and a need for best-in-class AI-driven solutions.</li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div> 
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <input type="radio" name="accord" id="fifthp">
+                    <label for="fifthp">Conversational AI Solutions</label>
+                    <div class="content">
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Basic Package</h3>
+                                <h4>From</h4>
+                                <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">15000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Provides standard conversational AI capabilities, such as basic chatbot functionalities and simple dialogue flows.</li>
+                                    <li>&#10003; Limited support for natural language understanding (NLU) and contextual understanding.</li>
+                                    <li>&#10003; Basic integration with messaging platforms and customer support channels.
+                                    </li>
+                                    <li>&#10003; Suitable for small businesses or startups with basic conversational AI needs and low to moderate usage.
+                                    </li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div>  
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Advanced Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">20000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Enhanced conversational AI capabilities, including advanced NLU and contextual understanding for more natural interactions.
+                                    </li>
+                                    <li>&#10003; Support for personalized responses, dynamic dialogue flows, and multi-turn conversations.
+                                    </li>
+                                    <li>&#10003; Integration with multiple channels and platforms, including voice assistants, social media, and website chat widgets.
+                                    </li>
+                                    <li>&#10003; Customization options for tailoring the conversational AI experience to specific use cases and business requirements.
+                                    </li>
+                                    <li>&#10003; Suitable for growing businesses with higher customer interaction volumes and the need for more sophisticated conversational AI capabilities.
+                                    </li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div> 
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>Premium Package</h3>
+                                <h4>From</h4>
+                                    <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">35000</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                   
+                                    <li>&#10003; Industry-leading accuracy and performance in understanding and generating natural language responses.
+                                    </li>
+                                    <li>&#10003; Seamless integration with enterprise systems and applications, enabling intelligent automation and personalized customer experiences.</li>
+                                    <li>&#10003; Advanced analytics and reporting features for monitoring conversational AI performance and optimizing interactions.
+                                    </li>
+                                    <li>&#10003; Dedicated support and consulting services, with proactive assistance in deploying and optimizing conversational AI solutions for maximum impact.
+                                    </li>
+                                    <li>&#10003; Suitable for large enterprises or organizations with complex customer interaction requirements and a need for best-in-class conversational AI solutions.
+                                    </li>
+                                 </ul>     
+                                                      
+                            </div>
+                        </div> 
+                    
+                    </div>
+                </li>
+            </ul>
+            <div id="location" class="location">Prices converted to USD</div>            
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="column">
+            <div class="column reveal">
+                <h1>Frequently Asked Questions</h1> 
+                <h2>Here are some of Frequently Asked Questions from Registered customer’s</h2>
+            </div>
+            <div class="accd-grid">
+                <div class="first-acc"> 
+                    
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="first">
+                            <label for="first">What is Studio5ive's AI service?</label>
+                            <div class="content">
+                                <p>
+                                    Studio5ive's AI service leverages cutting-edge artificial intelligence technologies to provide innovative solutions for businesses across various industries.  
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="second">
+                            <label for="second">What AI technologies does Studio5ive offer?</label>
+                            <div class="content">
+                                <p>
+                                    Studio5ive offers a wide range of AI technologies, including chatbots, speech recognition, computer vision, predictive analytics, and more.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="third">
+                            <label for="third">How can AI benefit my business?</label>
+                            <div class="content">
+                                <p>
+                                    AI can benefit your business by automating tasks, improving efficiency, enhancing customer experiences, and providing valuable insights from data analysis.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="fourth">
+                            <label for="fourth">Can Studio5ive customize AI solutions for my specific needs?</label>
+                            <div class="content">
+                                <p>
+                                    Yes, Studio5ive specializes in providing customized AI solutions tailored to meet the unique requirements of each client.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="second-acc">
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="fifth">
+                            <label for="fifth">What industries can benefit from Studio5ive's AI services?</label>
+                            <div class="content">
+                                <p>
+                                    Studio5ive's AI services are applicable to a variety of industries, including e-commerce, healthcare, finance, retail, manufacturing, and more.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="sixth">
+                            <label for="sixth">How does Studio5ive ensure the security and privacy of AI solutions?</label>
+                            <div class="content">
+                                <p>
+                                    Studio5ive prioritizes the security and privacy of its clients' data and implements robust measures to safeguard information and comply with relevant regulations.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="seventh">
+                            <label for="seventh">What is the process for implementing AI solutions with Studio5ive?</label>
+                            <div class="content">
+                                <p>
+                                    The process for implementing AI solutions with Studio5ive typically involves consultation, requirements gathering, solution design, development, testing, and deployment, followed by ongoing support and maintenance.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="eigth">
+                            <label for="eigth">How can I get started with Studio5ive's AI services?</label>
+                            <div class="content">
+                                <p>
+                                    Getting started with Studio5ive's AI services is easy. Simply reach out to us through our website or contact us directly to discuss your needs and schedule a consultation with our AI experts.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools" id="tools">
+        <div class="column">
+        
+            <h1>Technologies and Tools <br>We Work With</h1>
+            <div class="row">
+                <div class="column">
+                    <h2>Programming languages</h2>
+                    <div class="grid">
+                        <div class="tool"><img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" alt=""></div>
+                        <div class="tool"><img src="https://cdn.iconscout.com/icon/free/png-256/free-java-2038875-1720088.png"alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Rlogo.png" alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" alt=""></div>
+                    </div>
+                </div>   
+            
+                <div class="column">
+                    <h2>Frameworks & Libraries</h2>
+                    <div class="grid">
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/en/f/f5/Torch_2014_logo.png" alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/1200px-PyTorch_logo_icon.svg.png" alt=""></div>
+                        <div class="tool"><img src="https://seeklogo.com/images/N/numpy-logo-479C24EC79-seeklogo.com.png" alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/1200px-Pandas_mark.svg.png" alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/1024px-Keras_logo.svg.png" alt=""></div>
+                        <div class="tool"><img src="https://assets-global.website-files.com/60d251a34163cf29e1220806/64231e78ec087ab041480ac2_63bcf50351e48f7054caa0c9_Caffe_AI%2520and%2520ML%2520Technology%2520Framework%2520for%2520Nearshore%2520Software%2520Development.png" alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1200px-Tensorflow_logo.svg.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <h2>Big Data</h2>
+                <div class="grid">
+                    <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Apache_Hive_logo.svg/1138px-Apache_Hive_logo.svg.png" alt=""></div>
+                    <div class="tool"><img src="https://iconape.com/wp-content/png_logo_vector/hbase-logo.png" alt=""></div>
+                    <div class="tool"><img src="https://logowik.com/content/uploads/images/hadoop7135.jpg" alt=""></div>
+                    <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cassandra_logo.svg/2560px-Cassandra_logo.svg.png" alt=""></div>
+                    <div class="tool"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKFniJPb25yLweAqw_GoStJmUKyl19jQgQh35L2XCW1g&s" alt=""></div>
+                    <div class="tool"><img src="https://logowik.com/content/uploads/images/mongodb9740.logowik.com.webp" alt=""></div>
+                    <div class="tool"><img src="https://static-00.iconduck.com/assets.00/aws-dynamodb-icon-1817x2048-1gi0rqbm.png   " alt=""></div>
+                    <div class="tool"><img src="https://static-00.iconduck.com/assets.00/database-amazonredshift-icon-1862x2048-313yp7le.png" alt=""></div>
+                    <div class="tool"><img src="https://seeklogo.com/images/A/azure-cosmos-db-logo-128436034F-seeklogo.com.png" alt=""></div>
+                </div>
+                </div>
+            </div>
+           
+            <div class="row">
+                <div class="column">
+                    <h2>Database</h2>
+                    <div class="grid">
+                        <div class="tool"><img src="https://pngimg.com/d/mysql_PNG23.png" alt=""></div>
+                        <div class="tool"><img src="https://logowik.com/content/uploads/images/microsoft-sql-server4529.jpg" alt=""></div>
+                        <div class="tool"><img src="https://logos-world.net/wp-content/uploads/2020/09/Oracle-Logo.png" alt=""></div>
+                        <div class="tool"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpmh2lpeUbnwFa4s9_DrqSujEPMfqn6IL8eJuEX1r6Dw&s" alt=""></div>
+                        <div class="tool"><img src="https://seeklogo.com/images/A/azure-sql-database-logo-D7A32C9CD9-seeklogo.com.png" alt=""></div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+
+    <div class="footer" id="contact">
+        <div class="row-footer">
+            <div class="clmn-footer">
+                <div class="row">
+                    <img src="../images/5logo_white.png" alt="" class="logo2">
+                        <h3 class="text">STUDIO5IVE</h3>
+                </div>    
+                <div class="iconrow">
+                    <button class="button button--skoll" style="background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);"><span style="mix-blend-mode:normal"><span><img src="../icons/IG.svg" alt="" class="skoll-icon"></span></span></button>
+                    <button class="button button--skoll" style="background: #1877F2;"><span style="mix-blend-mode:normal"><span><img src="../icons/fb.svg" alt="" class="skoll-icon"></span></span></button>
+                    <button class="button button--skoll"><span><span><img src="../icons/X.svg" alt="" class="skoll-icon"></span></span></button>
+                    <button class="button button--skoll" style="background-color: #0762C8;"><span style="mix-blend-mode:normal"><span><img src="../icons/link.svg" alt="" class="skoll-icon"></span></span></button>
+                </div>
+
+            </div>  
+            
+            <div class="contactInfo">
+            
+                <a class="box" href="mailto:info@studio5ive.org">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>info@studio5ive.org</p>
+                    </div>
+                </a>
+                <a class="box" href="tel:+254706751272">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p class="contact-phone">+16592702766</p>
+                    </div>
+                </a>
+            </div>
+            <div class="footer__products">                
+                <span class="footer__title">Software</span>
+                <ul class="dropdown__list">
+                    <li><a href="software.html#solutions" class="footer__link">Mobile App Development</a></li>
+                    <li><a href="software.html#solutions" class="footer__link">Website Development</a></li>
+                    <li><a href="software.html#solutions" class="footer__link">Desktop App Development</a></li>
+                    <li><a href="software.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+
+                <span class="footer__title">Architecture</span>
+                <ul class="dropdown__list">
+                    <li><a href="architecture.html#solutions" class="footer__link">Architectural Design</a></li>
+                    <li><a href="architecture.html#solutions" class="footer__link">3D Modeling and Rendering</a></li>
+                    <li><a href="architecture.html#solutions" class="footer__link">Interior Design</a></li>
+                    <li><a href="architecture.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+            </div>
+            <div class="footer__products">                
+                <span class="footer__title">Animation</span>
+                <ul class="dropdown__list">
+                    <li><a href="animation.html#solutions" class="footer__link">2D Animation</a></li>
+                     <li><a href="animation.html#solutions" class="footer__link">3D Animation</a></li>
+                    <li><a href="animation.html#solutions" class="footer__link">Music Video</a></li>
+                    <li><a href="animation.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+                <span class="footer__title">Video Game</span>
+                <ul class="dropdown__list">
+                    <li><a href="game.html#solutions" class="footer__link">PC Games</a></li>
+                    <li><a href="game.html#solutions" class="footer__link">Mobile Games</a></li>
+                    <li><a href="game.html#solutions" class="footer__link">Concole Games</a></li>
+                </ul>
+            </div>
+            <div class="contactForm" style="display: none;">
+                <form action="" id="contactForm">
+                    <h2 style="color: black;">Send Message</h2>
+                    <div class="alert">Your message was sent</div>
+                    <div class="inputBox" style="border-bottom: 2px solid black;background-color: transparent; color: black;">
+                        <input type="text" name="" required="'required" id="name" style="color: black;">
+                        <span style="color: #a8a8a8;">Full Name</span>
+                    </div>
+                    <div class="inputBox" style="border-bottom: 2px solid black;background-color: transparent; color: black;">
+                        <input type="text" name="" required="'required" id="email" style="color: black;">
+                        <span style="color: #a8a8a8;">Email Address</span>
+                    </div>
+                    <div class="inputBox" style="border-bottom: 2px solid black;background-color: transparent; color: black;">
+                        <textarea name="" id="message" cols="30" rows="5" required="'required" style="color: black;"></textarea>
+                        <span style="color: #a8a8a8;">Type Your Message...</span>
+                    </div>
+                    <div class="">
+                        <input type="submit" name="" value="Send" style=" width: 100px;padding: 10px 0;margin-top: 10px;
+                        background-color: transparent;
+                        transition: 0.6s;
+                        color: black;
+                        border: 1px solid black; 
+                        cursor: pointer;">
+                    </div>
+                </form>
+            </div>       
+        </div>
+        <div class="row">
+            <p>© 2024 STUDIO5IVE | All Rights Reserved | <a href="../privacy.html">Privacy Policy</a> | <a href="../payment.html">Payment Policy</a></p>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="../js/upload.js"></script>
+<script src="../js/location.js"></script>
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/661007f2a0c6737bd128ae88/1hqn9u3nl';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+</html>

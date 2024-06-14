@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/port.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" id="favicon" href="../images/5logo_white.png" type="image/x-icon">
+    <title>STUDIO5IVE : Animation</title>
+
+    <meta name="msapplication-TileImage" content="https://studio5ive.org/images/web-logo.jpg"/>
+
+    <meta property="og:site_name" content="Studio5ive"/>
+    <meta property="og:title" content="Empowering Your Vision & Crafting Digital Excellence"/>
+    <meta property="og:description" content="Get started with our great offers today"/>
+
+    <meta property="og:image" itemprop="image" content="https://studio5ive.org/images/web-logo.jpg"/>
+
+    <meta property="og:type" content="website"/>    
+    <meta property="og:image:type" content="image/jpg">
+
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="300"/>
+    
+    <meta property="og:url" content="https://studio5ive.org"/>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo"></a>
+        <div>
+            <input type="checkbox" id="check" class="nav-check">
+            <ul>
+                <li><a href="#solutions" class="active" >Products</a></li>
+                <li><a href="#prices" class="active" >Prices</a></li>
+                <li><a href="#faq" class="active" >FAQ</a></li>
+                <li><a href="#tools" class="active" >Tools</a></li>
+                <li><a class="button button--dione" href="#request" onclick="fillInput('')"><span>Resize</span></a></li>
+                <div class="close-nav">
+                    <label for="check" class="chckbtn" onclick="toggleCheckbox()">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+            </ul>
+            <div class="check-menu"> 
+                   <label for="check" class="chckbtn" onclick="toggleCheckbox()">
+                    <img src="../images/menu.svg" alt="Menu Icon" class="menu">
+                </label>
+            </div>
+            
+        </div>
+    </nav> 
+    <section class="home">
+        <div class="home-items">
+            <div class="anim-banner"></div>
+            <div class="home-arch"
+            > 
+                <h1 >
+                    Animation Service
+                </h1>
+                <u>
+                    <li>&#10003; <strong>Diverse Animation Services</strong> Specializing in 2D, 3D, character animation, and more.</li>
+                    <li>&#10003; <strong>Engaging Storytelling</strong> Crafting compelling narratives through animation.</li>
+                    <li>&#10003; <strong>Versatile Applications</strong> Animations for advertisements, explainer videos, music videos, and more.</li>
+                    <li>&#10003; <strong>High-Quality Output</strong> Delivering professional-grade animations for various industries.</li>
+                </u>
+                <div >
+                    <a href="#request" class="btn-rq" onclick="fillInput('')">Request Development</a>
+                    <!-- <a href="#services" class="btn-quote">Get Quote</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="solutions" id="solutions">
+        <h1>What Animation Service Do You Need?</h1>
+        <p class="reveal">
+            Dive into the world of creativity with Studio5ive's animation services. Whether it's 2D or 3D animation, video editing, advertisement animation, or character animation, we bring stories to life with captivating visuals. Let us elevate your project with our expertise in animation, visual effects, and storytelling. Together, we'll make your vision a reality.
+        </p>
+       
+        <div class="main">
+            <ul class="cbp-ig-grid">
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am seeking skilled 2D animation services to bring our project\'s concepts and narratives to life with engaging visuals.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" style="height: 120px;" src="../icons/products/animation/2d.png" alt="">
+                        <h3 class="cbp-ig-title">2D Animation</h3>
+                        <span class="cbp-ig-category">Bring your ideas to life with charming and dynamic 2D animations. Perfect for storytelling, branding, and engaging your audience with colorful visuals and fluid motion.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am interested in professional 3D animation services to create dynamic and immersive visuals that elevate our project\'s presentation and storytelling.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/animation/3d.png" alt="">
+                        <h3 class="cbp-ig-title">3D Animation</h3>
+                        <span class="cbp-ig-category">Dive into the world of three-dimensional animation, where creativity knows no bounds. From realistic renderings to fantastical worlds, our 3D animations add depth and immersion to your projects.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am exploring options for creating immersive fly-through experiences to showcase our project\'s design and features with engaging realism.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/animation/fly.png" alt="">
+                        <h3 class="cbp-ig-title">Fly Throughs</h3>
+                        <span class="cbp-ig-category">Immerse your audience in stunning environments with fly-through animations. Perfect for architectural visualization, urban planning, and virtual tours, our fly-throughs transport viewers to captivating spaces with fluid motion and breathtaking views.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am seeking expertise in advertisement animation to craft captivating and persuasive visual narratives that effectively promote our project.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/animation/ad.png" alt="">
+                        <h3 class="cbp-ig-title">Advertisement Animation</h3>
+                        <span class="cbp-ig-category">Grab attention and leave a lasting impression with eye-catching animated advertisements. Our creative team crafts compelling animations that showcase your products or services in the best light.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am interested in animated explainer videos to effectively communicate complex concepts and highlight the value proposition of our project.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/animation/explainer.png" alt="">
+                        <h3 class="cbp-ig-title">Animated Explainers</h3>
+                        <span class="cbp-ig-category">Simplify complex ideas and captivate your audience with animated explainer videos. Our animations distill information into engaging visuals that educate, entertain, and inspire action.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am seeking professional character animation services to bring our project\'s characters to life with personality and charm.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/animation/character.png" alt="">
+                        <h3 class="cbp-ig-title">Character Animation</h3>
+                        <span class="cbp-ig-category">Infuse personality and charm into your projects with custom character animations. From lovable mascots to expressive avatars, our character animations breathe life into your storytelling.</span>
+                    </a>
+                </li>
+                
+
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am exploring opportunities for incorporating visual effects to enhance the cinematic quality and storytelling of our project.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/animation/visual-effects.png" alt="">
+                        <h3 class="cbp-ig-title">Visual Effects</h3>
+                        <span class="cbp-ig-category">Elevate your videos with stunning visual effects that dazzle and amaze. Whether it's adding explosions, enhancing environments, or creating magical elements, our VFX artists bring imagination to reality.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am seeking expert logo animation services to create dynamic and memorable brand representations that captivate our audience.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/animation/logo.png" alt="">
+                        <h3 class="cbp-ig-title">Logo Animation</h3>
+                        <span class="cbp-ig-category">Make your brand shine with animated logo intros and outros. Our logo animations add flair and professionalism to your videos, leaving a memorable impression on your audience.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am interested in professional music video animation services to produce visually stunning and captivating animations that complement our music.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/animation/music.png" alt="">
+                        <h3 class="cbp-ig-title">Music Video</h3>
+                        <span class="cbp-ig-category">Set your music apart with captivating music videos that complement your sound. Our creative team works with you to bring your vision to life, ensuring your music stands out in a crowded market.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <a href="#request" onclick="fillInput('I am seeking specialized animation services to create an engaging game trailer that showcases the excitement and features of our upcoming game.');">
+                        <div class="arrw">
+                            <i class="icon-font icon-s-arrow"></i>
+                        </div>
+                        <img  class="cbp-ig-icon" src="../icons/products/animation/game.png" alt="">
+                        <h3 class="cbp-ig-title">Game Trailer</h3>
+                        <span class="cbp-ig-category">Build anticipation and excitement for your game with captivating trailers that showcase its features and gameplay. Our game trailers capture the essence of your game, enticing players to dive into your world.</span>
+                    </a>
+                </li>
+                <li class="reveal">
+                    <div class="started">
+                        <h1>We are excited to discuss your Animation Solution needs!</h1>
+                        <a href="#request" onclick="fillInput('');" class="bttn btn-4 btn-4a icon-arrow-right">Request</a>
+                    </div>
+                </li>
+                <li class="reveal"></li>                
+            </ul>
+        </div>
+    </section>
+    <section class="request" id="request">
+        <div class="req-container reveal">
+            <div class="row">
+                <div class="left-container">
+                    <div class="column">
+                        <div>
+                            <div class="dg-logo">
+                                <img src="../images/5logo_white.png" alt="" class="logo2">
+                                <h3 class="text">S T U D I O 5 I V E</h3>
+                            </div> 
+                            <h1>Embark on your journey to success</h1>
+                            <u>
+                                <li>&#10003; Collaborate with our expert team dedicated to bringing your vision to life</li>
+                                <li>&#10003; Connect with talent and businesses worldwide to suit StudioFive's needs</li>
+                                <li>&#10003; Pay per project, not per hour</li>
+                            </u>
+                        </div>
+                        <div>
+                            <a class="box" href="mailto:info@studio5ive.org">
+                                <div class="icon"><i class="fas fa-envelope"></i></div>
+                                <div class="text">
+                                    <h3>Email Us</h3>
+                                    <p>info@studio5ive.org</p>
+                                </div>
+                            </a>
+                            <a class="box phone" href="tel:+254706751272">
+                                <div class="icon"><i class="fas fa-phone"></i></div>
+                                <div class="text">
+                                    <h3>Call Us</h3>
+                                    <p class="contact-phone">+16592702766</p>
+                                </div>
+                            </a>   
+                            <a class="box whatsapp" href="https://wa.me/+16592702766"> 
+                                <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                                <div class="text">
+                                    <h3>Whats App</h3>
+                                    <p class="contact-phone">+16592702766</p>
+                                </div>
+                            </a>  
+                            <div class="box">
+                                <div class="icon"><i class="fas fa-comment"></i></div>
+                                <h3>Live Chat</h3>
+                            </div>  
+                        </div>
+                    </div>                    
+                </div>
+                <div class="right-container">
+                    <h1>We are excited to discuss your Software Solutions needs!</h1>
+                    <div class="details">
+                        <form action="" id="serviceForm">
+                            <div class="sAlert">Your message was sent</div>
+                            <div class="row">
+                                <div class="inputBox">
+                                    <input type="text" name="" required="'required" id="sName">
+                                    <span>Full Name</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" name="" id="sCompany">
+                                    <span>Company</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="inputBox">
+                                    <input type="text" name="" required="'required" id="sPhone">
+                                    <span>Phone</span>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" name="" required="'required" id="sEmail">
+                                    <span>Email Address</span>
+                                </div>
+                            </div>
+                            <div class="inputBox">
+                                <textarea name="" id="sMessage" cols="30" rows="5" required="'required"></textarea>
+                                <span>How can we help you?</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                        </form>
+                    </div> 
+                    <div class="dg-end">
+                        <p>By proceding , you agree to the Studio5ive <a href="../payment.html">Payment Policy</a> and to occasionally receive emails from us. Please read our <a href="../privacy.html">Privacy Policy</a> to learn how we use your personal data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <section class="prices" id="prices">
+        <div class="column">
+            <h1 class="reveal">Average Cost of Different Animation Service</h1>
+            <p class="reveal">
+                At Studio5ive, we understand the importance of transparency when it comes to pricing for animation services. Our average cost estimates vary based on factors such as project complexity, animation style, duration, and specific client requirements. These estimates serve as a starting point for discussions, as each project is unique and tailored to meet our clients' vision and budget. Contact us today to discuss your animation needs and receive a personalized quote from our experienced team.
+            </p>
+            <ul class="accord reveal">
+                <li>
+                    <input type="radio" name="accord" id="firstp" checked>
+                    <label for="firstp">Animation</label>
+                    <div class="content">
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>2D Animation</h3>
+                                <div class="pricing pricing--rabten">
+                                    <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">$</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">50</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <h4>Per Minute</h4>
+                                <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Includes simpler, flat animations with limited depth and detail.</li>
+                                    <li>&#10003; Generally more affordable, suitable for clients with a smaller budget.</li>
+                                    <li>&#10003; Faster turnaround time due to less complexity in the animation process.</li>
+                                    <li>&#10003; Utilizes simpler animation software and tools, which are less resource-intensive.</li>
+                                    <li>&#10003; Ideal for explainer videos, simple advertisements, and educational content.</li>
+                                 </ul>     
+                                                       
+                            </div>
+                        </div>  
+                        <div class="item reveal">
+                            <div class="column">
+                                <h3>3D Animation</h3>
+                                <div class="pricing pricing--rabten">
+                                <div class="pricing__price">
+                                        <span class="pricing__anim pricing__anim--1">
+                                                <span class="pricing__currency">Ksh</span>
+                                        </span>
+                                        <span class="pricing__anim pricing__anim--2">
+                                                <span class="pricing__cost">80</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <h4>Per Minute</h4>
+                                  <a class="btnp-rqst" href="#request" onclick="fillInput('');">Request</a>
+                                <ul>
+                                    <li>&#10003; Offers more complex animations with realistic depth, textures, and intricate details.</li>
+                                    <li>&#10003; Higher cost due to the additional time and resources required for modeling, rendering, and detailed animation.</li>
+                                    <li>&#10003; Longer production time needed for modeling, rendering, and achieving high-quality visual effects.</li>
+                                    <li>&#10003; Requires advanced software and tools for 3D modeling, texturing, lighting, and rendering.</li>
+                                    <li>&#10003; Suitable for high-end advertisements, game trailers, architectural fly-throughs, and detailed visual storytelling.</li>
+                              
+                                 </ul>     
+                                                       
+                            </div>
+                        </div> 
+                                              
+                    </div>
+                </li>
+                
+            </ul>
+            <div id="location" class="location">Prices converted to USD</div>
+        </div>
+    </section>
+    <section class="faq" id="faq">
+        <div class="column">
+            <div class="column reveal">
+                <h1>Frequently Asked Questions</h1> 
+                <h2>Here are some of Frequently Asked Questions from Registered customer’s</h2>
+            </div>
+            <div class="accd-grid">
+                <div class="first-acc"> 
+                    
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="first">
+                            <label for="first">What types of animation services does Studio5ive offer?</label>
+                            <div class="content">
+                                <p>
+                                    Studio5ive offers a wide range of animation services, including 2D animation, 3D animation, character animation, motion graphics, explainer videos, and more.  
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="second">
+                            <label for="second">Does Studio5ive work with clients internationally?</label>
+                            <div class="content">
+                                <p>
+                                    Yes, Studio5ive serves clients worldwide and is experienced in collaborating remotely. We communicate efficiently through email, video calls, and project management tools to ensure seamless collaboration regardless of geographical location.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="third">
+                            <label for="third">How much does animation production cost?</label>
+                            <div class="content">
+                                <p>
+                                    The cost of animation production varies depending on factors such as the complexity of the project, duration, style, and specific requirements. Studio5ive provides customized quotes tailored to each project's needs.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="fourth">
+                            <label for="fourth">How long does it take to complete an animation project?</label>
+                            <div class="content">
+                                <p>
+                                    The timeline for completing an animation project depends on various factors, including project scope, complexity, and client feedback. Studio5ive works closely with clients to establish realistic timelines and ensure timely delivery.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="second-acc">
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="fifth">
+                            <label for="fifth">Do I need to provide a script or storyboard for my animation project?</label>
+                            <div class="content">
+                                <p>
+                                    While having a script or storyboard can be helpful, Studio5ive offers scriptwriting and storyboard development services for clients who require assistance in these areas. Our team collaborates closely with clients to bring their vision to life.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="sixth">
+                            <label for="sixth">Can I request revisions to my animation project?</label>
+                            <div class="content">
+                                <p>
+                                    Yes, Studio5ive values client feedback and offers revision rounds to ensure that the final animation meets your expectations. We strive to achieve client satisfaction and are committed to refining the animation until it aligns with your vision.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="seventh">
+                            <label for="seventh">What file formats will I receive upon completion of the animation project?</label>
+                            <div class="content">
+                                <p>
+                                    Studio5ive delivers animation projects in various file formats based on client preferences and intended use. Common file formats include MP4, MOV, AVI, and GIF, among others.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <ul class="accordion reveal">
+                        <li>
+                            <input type="radio" name="accordion" id="eigth">
+                            <label for="eigth">Can Studio5ive help with animation distribution or marketing?</label>
+                            <div class="content">
+                                <p>
+                                    Yes, Studio5ive offers additional services such as animation distribution and marketing assistance to help clients maximize the reach and impact of their animated content. We provide guidance on leveraging social media, websites, and other channels to promote animations effectively.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tools" id="tools">
+        <div class="column">
+            <h1>Technologies and Tools <br>We Work With</h1>
+            <div class="row">
+                <div class="column">
+                    <h2>Programms</h2>
+                    <div class="grid">
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/2503px-Blender_logo_no_text.svg.png" alt=""></div>
+                        <div class="tool"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwqMgQNKkw52YD0SVF8cFUo5Hkpr7Z637b13d46rM4Tg&s"alt=""></div>
+                        <div class="tool"><img src="https://pbs.twimg.com/profile_images/1272875599569096706/gIr0v8xi_400x400.png" alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adobe_Character_Animator_icon_%282020%29.svg/2101px-Adobe_Character_Animator_icon_%282020%29.svg.png" alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/d/d8/C4D_Logo.png/1023px-C4D_Logo.png" alt=""></div>
+                        <div class="tool"><img src="https://anturis.com/wp-content/uploads/2022/09/Marvelous-Designer-Logo.png" alt=""></div>
+                        <div class="tool"><img src="https://seeklogo.com/images/O/opentoonz-logo-8EDE412E73-seeklogo.com.png?v=638348883190000000" alt=""></div>
+                        <div class="tool"><img src="https://www.moosoft.com/wp-content/uploads/2022/10/Moho-Pro-765-1.png" alt=""></div>
+                        <div class="tool"><img src="https://www.pngitem.com/pimgs/m/196-1966079_transparent-maya-logo-png-autodesk-maya-logo-png.png" alt=""></div>
+                        <div class="tool"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZFY_VQpL5o4U-FClEwrzlyzyRNHAzm97D3V_p3x6brg&s" alt=""></div>
+                        <div class="tool"><img src="https://cdn.iconscout.com/icon/free/png-256/free-unity-226057.png?f=webp" alt=""></div>
+                        <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Houdini3D_icon.png" alt=""></div>
+                        <div class="tool"><img src="https://seeklogo.com/images/P/pencil2d-logo-E2649FD424-seeklogo.com.png" alt=""></div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <div class="footer" id="contact">
+        <div class="row-footer">
+            <div class="clmn-footer">
+                <div class="row">
+                    <img src="../images/5logo_white.png" alt="" class="logo2">
+                        <h3 class="text">STUDIO5IVE</h3>
+                </div>    
+                <div class="iconrow">
+                    <button class="button button--skoll" style="background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);"><span style="mix-blend-mode:normal"><span><img src="../icons/IG.svg" alt="" class="skoll-icon"></span></span></button>
+                    <button class="button button--skoll" style="background: #1877F2;"><span style="mix-blend-mode:normal"><span><img src="../icons/fb.svg" alt="" class="skoll-icon"></span></span></button>
+                    <button class="button button--skoll"><span><span><img src="../icons/X.svg" alt="" class="skoll-icon"></span></span></button>
+                    <button class="button button--skoll" style="background-color: #0762C8;"><span style="mix-blend-mode:normal"><span><img src="../icons/link.svg" alt="" class="skoll-icon"></span></span></button>
+                </div>
+
+            </div>  
+            
+            <div class="contactInfo">
+            
+                <a class="box" href="mailto:info@studio5ive.org">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>info@studio5ive.org</p>
+                    </div>
+                </a>
+                <a class="box" href="tel:+254706751272">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p class="contact-phone">+16592702766</p>
+                    </div>
+                </a>
+            </div>
+            <div class="footer__products">                
+                <span class="footer__title">Software</span>
+                <ul class="dropdown__list">
+                    <li><a href="software.html#solutions" class="footer__link">Mobile App Development</a></li>
+                    <li><a href="software.html#solutions" class="footer__link">Website Development</a></li>
+                    <li><a href="software.html#solutions" class="footer__link">Desktop App Development</a></li>
+                    <li><a href="software.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+
+                <span class="footer__title">AI</span>
+                <ul class="dropdown__list">
+                    <li><a href="ai.html#solutions" class="footer__link">Chatbots</a></li>
+                    <li><a href="ai.html#solutions" class="footer__link">Speech Recognition</a></li>
+                    <li><a href="ai.html#solutions" class="footer__link">Computer Vision</a></li>
+                    <li><a href="ai.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+            </div>
+            <div class="footer__products">                
+                <span class="footer__title">Architecture</span>
+                <ul class="dropdown__list">
+                    <li><a href="architecture.html#solutions" class="footer__link">Architectural Design</a></li>
+                    <li><a href="architecture.html#solutions" class="footer__link">3D Modeling and Rendering</a></li>
+                    <li><a href="architecture.html#solutions" class="footer__link">Interior Design</a></li>
+                    <li><a href="architecture.html#solutions" class="footer__link">+ more</a></li>
+                </ul>
+                <span class="footer__title">Video Game</span>
+                <ul class="dropdown__list">
+                    <li><a href="game.html#solutions" class="footer__link">PC Games</a></li>
+                    <li><a href="game.html#solutions" class="footer__link">Mobile Games</a></li>
+                    <li><a href="game.html#solutions" class="footer__link">Concole Games</a></li>
+                </ul>
+            </div>        
+        </div>
+        <div class="row">
+            <p>© 2024 STUDIO5IVE | All Rights Reserved | <a href="../privacy.html">Privacy Policy</a> | <a href="../payment.html">Payment Policy</a></p>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="../js/upload.js"></script>
+<script src="../js/location.js"></script>
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/661007f2a0c6737bd128ae88/1hqn9u3nl';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+</html>
