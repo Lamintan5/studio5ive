@@ -9,8 +9,8 @@ function getCurrentLocation() {
 function showPosition(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    const geoApiKey = 'e62ed52fe1914a1189737fb5a08071d6'; // Replace with your OpenCage API key
-    const currencyApiKey = '4b17bace6855f24d877aa384'; // Replace with your ExchangeRate-API key
+    const geoApiKey = 'e62ed52fe1914a1189737fb5a08071d6'; 
+    const currencyApiKey = '4b17bace6855f24d877aa384';
     const apiUrl = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${geoApiKey}`;
 
     fetch(apiUrl)
@@ -28,6 +28,66 @@ function showPosition(position) {
             console.error('Error fetching the country data:', error);
             document.getElementById("location").innerHTML = "Unable to retrieve country information.";
         });
+}
+
+function convertCurrency(targetCurrency, apiKey) {
+    const baseCurrency = 'USD';
+
+    const amountElements = document.querySelectorAll('.pricing__cost');
+    const currencyElements = document.querySelectorAll('.pricing__currency');
+    const currencyUrl = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${baseCurrency}`;
+
+    fetch(currencyUrl)
+        .then(response => response.json())
+        .then(data => {
+            const kenyanNumber = "+254706751272";
+            const usNumber = "+16592702766";
+            const phoneElements = document.querySelectorAll('.contact-phone');
+
+            const exchangeRate = data.conversion_rates[targetCurrency];
+
+            if (!exchangeRate) {
+                throw new Error('Invalid target currency or no exchange rate available.');
+            }
+
+            amountElements.forEach((amountElement, index) => {
+                const amount = parseFloat(amountElement.textContent);
+                const convertedAmount = (amount * exchangeRate).toFixed(0);
+                const currencyElement = currencyElements[index];
+                currencyElement.textContent = targetCurrencySymbol(targetCurrency);
+                amountElement.textContent = convertedAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            });
+
+            document.getElementById("location").innerHTML = `Prices converted to ${targetCurrency}`;
+            
+            phoneElements.forEach(phoneElement => {
+                if (targetCurrency === 'KES') {
+                    phoneElement.textContent = kenyanNumber;
+                } else {
+                    phoneElement.textContent = usNumber;
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching the exchange rate data:', error);
+            document.getElementById("location").innerHTML = "Unable to retrieve exchange rate information.";
+        });
+}
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            document.getElementById("location").innerHTML = "User denied the request for Geolocation.";
+            break;
+        case error.POSITION_UNAVAILABLE:
+            document.getElementById("location").innerHTML = "Location information is unavailable.";
+            break;
+        case error.TIMEOUT:
+            document.getElementById("location").innerHTML = "The request to get user location timed out.";
+            break;
+        case error.UNKNOWN_ERROR:
+            document.getElementById("location").innerHTML = "An unknown error occurred.";
+            break;
+    }
 }
 
 function getCurrencyCode(country) {
@@ -231,50 +291,6 @@ function getCurrencyCode(country) {
     return countryCurrencyMap[country];
 }
 
-function convertCurrency(targetCurrency, apiKey) {
-    const baseCurrency = 'USD';
-
-    const amountElements = document.querySelectorAll('.pricing__cost');
-    const currencyElements = document.querySelectorAll('.pricing__currency');
-    const currencyUrl = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${baseCurrency}`;
-
-    fetch(currencyUrl)
-        .then(response => response.json())
-        .then(data => {
-            const kenyanNumber = "+254706751272";
-            const usNumber = "+16592702766";
-            const phoneElements = document.querySelectorAll('.contact-phone');
-
-            const exchangeRate = data.conversion_rates[targetCurrency];
-
-            if (!exchangeRate) {
-                throw new Error('Invalid target currency or no exchange rate available.');
-            }
-
-            amountElements.forEach((amountElement, index) => {
-                const amount = parseFloat(amountElement.textContent);
-                const convertedAmount = (amount * exchangeRate).toFixed(0);
-                const currencyElement = currencyElements[index];
-                currencyElement.textContent = targetCurrencySymbol(targetCurrency);
-                amountElement.textContent = convertedAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            });
-
-            document.getElementById("location").innerHTML = `Prices converted to ${targetCurrency}`;
-            
-            phoneElements.forEach(phoneElement => {
-                if (targetCurrency === 'KES') {
-                    phoneElement.textContent = kenyanNumber;
-                } else {
-                    phoneElement.textContent = usNumber;
-                }
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching the exchange rate data:', error);
-            document.getElementById("location").innerHTML = "Unable to retrieve exchange rate information.";
-        });
-}
-
 function targetCurrencySymbol(currencyCode) {
     // This function maps currency codes to their respective symbols.
     // You can add more currencies and their symbols as needed.
@@ -431,25 +447,6 @@ function targetCurrencySymbol(currencyCode) {
     };
     return currencySymbolMap[currencyCode] || currencyCode;
 }
-
-function showError(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            document.getElementById("location").innerHTML = "User denied the request for Geolocation.";
-            break;
-        case error.POSITION_UNAVAILABLE:
-            document.getElementById("location").innerHTML = "Location information is unavailable.";
-            break;
-        case error.TIMEOUT:
-            document.getElementById("location").innerHTML = "The request to get user location timed out.";
-            break;
-        case error.UNKNOWN_ERROR:
-            document.getElementById("location").innerHTML = "An unknown error occurred.";
-            break;
-    }
-}
-
-
 getCurrentLocation();
 
 

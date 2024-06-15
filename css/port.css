@@ -1300,7 +1300,7 @@ input[type="radio"]:checked + .cf-label .cf-radio-circle::after {
 
 .req-container{
     width: 70%;
-    height: 60vh;
+    height: 550px;
     background-color: #111;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 
@@ -1601,7 +1601,7 @@ input[type="radio"]:checked + .cf-label .cf-radio-circle::after {
         font-size: 15px;
     }
     .req-container{
-        height: 80vh;
+        height: 600px;
     }
     .home-arch{
         padding: 125px;
