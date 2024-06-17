@@ -162,6 +162,7 @@ cookieMessage = () => {
       document.querySelector(".cookie").style.display = "block";  
 }
 
+
 // logo
 window.addEventListener("load", cookieMessage);
 

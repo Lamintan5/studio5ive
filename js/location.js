@@ -447,6 +447,6 @@ function targetCurrencySymbol(currencyCode) {
     };
     return currencySymbolMap[currencyCode] || currencyCode;
 }
-getCurrentLocation();
 
+getCurrentLocation();
 
