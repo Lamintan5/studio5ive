@@ -443,7 +443,6 @@ function targetCurrencySymbol(currencyCode) {
         "YER": "﷼",
         "ZMW": "ZK",
         "ZWL": "$",
-        // Add more currencies and their symbols here
     };
     return currencySymbolMap[currencyCode] || currencyCode;
 }
